@@ -339,7 +339,8 @@ body{
      -webkit-transition: -webkit-transform .4s;
      transition: -webkit-transform .4s;
      transition: transform .4s;
-     transition: transform .4s, -webkit-transform .4s
+     transition: transform .4s, -webkit-transform .4s;
+     
  }
 
  .modalview .container-fluid {
@@ -2724,4 +2725,10 @@ section {
       height: 400px;
     }
   }
+
+
+
+
+
+  /* Service section */
   
