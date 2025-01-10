@@ -497,10 +497,14 @@ body{
      height: 80%;
      /* border: white 1px solid; */
      margin: 7% 10%;
+     padding:2%;
      /* text-align: center; */
      color: white;
+ 
  }
-
+.content h1{
+    text-align: center;
+}
 
  /* ABOUT SECTION */
  .profile-img {
@@ -842,114 +846,6 @@ body{
 
 
 
- /* CONTACT SECTION */
-
- .contact .row {
-     padding-top: 5%;
- }
-
-
- .social-btns .btn,
- .social-btns .btn:before,
- .social-btns .btn .fa {
-     transition: all .5s;
-     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
- }
-
- .social-btns .btn:before {
-     top: 90%;
-     left: -110%;
- }
-
- .social-btns .btn .fa {
-     transform: scale(.8);
- }
-
- .social-btns .btn.facebook:before {
-     background-color: #3b5998;
- }
-
- .social-btns .btn.facebook .fa {
-     color: #3b5998;
- }
-
- .social-btns .btn.twitter:before {
-     background-color: #3cf;
- }
-
- .social-btns .btn.twitter .fa {
-     color: #3cf;
- }
-
- .social-btns .btn.google:before {
-     background-color: #dc4a39;
- }
-
- .social-btns .btn.google .fa {
-     color: #dc4a38;
- }
-
- .social-btns .btn.dribbble:before {
-     background-color: #f26798;
- }
-
- .social-btns .btn.dribbble .fa {
-     color: #f26798;
- }
-
- .social-btns .btn.skype:before {
-     background-color: #00aff0;
- }
-
- .social-btns .btn.skype .fa {
-     color: #00aff0;
- }
-
- .social-btns .btn:focus:before,
- .social-btns .btn:hover:before {
-     top: -10%;
-     left: -10%;
- }
-
- .social-btns .btn:focus .fa,
- .social-btns .btn:hover .fa {
-     color: #fff;
-     transform: scale(1);
- }
-
-
-
- .social-btns .btn {
-     display: inline-block;
-     /* background-color: #fff; */
-     width: 60px;
-     height: 60px;
-     line-height: 42px;
-     margin: 5%;
-     text-align: center;
-     position: relative;
-     overflow: hidden;
-     border-radius: 50%;
-     box-shadow: 0 5px 15px -3px rgba(217, 217, 217, 0.934);
-     opacity: 1;
- }
-
- .social-btns .btn:before {
-     content: '';
-     width: 120%;
-     height: 120%;
-     position: absolute;
-     transform: rotate(45deg);
- }
-
- .social-btns .btn .fa {
-     font-size: 37px;
-     vertical-align: middle;
-     margin: 4px 0px;
- }
-
- /* END CONTACT SECTION */
-
 
 
  .planet {
@@ -1098,7 +994,7 @@ body{
 
 
 
- /* ============= Begin Testimonial Flexbox ============ */
+ /* ============= Begin Experience section   ============ */
  #flex-container {
      display: -webkit-box;
      display: -ms-flexbox;
@@ -1116,7 +1012,7 @@ body{
      height: 110vh;
      max-width: 900px;
      margin: auto;
-     /* background-color: #d33d3d00; */
+     background-color: #d33d3d00;
      /* -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
          0 1px 2px rgba(0, 0, 0, 0.24);
      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
@@ -1213,8 +1109,7 @@ body{
  .content-test p {
      max-width: 90%;
      text-align: center;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    
  }
 
  .content-test h1 {
@@ -1284,61 +1179,47 @@ body{
 
  /* If the screen size is 480px or less */
  @media (max-width: 480px) {
-     .content_testimonial-1 .picto {
-         padding-top: 100px;
-     }
+    #flex-container {
+        display: flex;
+        flex-direction: column; /* Ensure the layout is vertical */
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: auto;
+        height: auto;
+        width: 100%;}
+        
+    #left-zone {
+        display: none; /* Hide the left zone */
+        
+    }
+    
+    #right-zone {
+        width: 100%; /* Take full width */
+        height: auto; /* Adjust height for content */
+        
+    }
 
-     .content_testimonial-2 .picto {
-         padding-top: 100px;
-     }
-
-
-     .content_testimonial-4 .picto {
-         padding-top: 100px;
-     }
-
-     .item>label {
-         font-size: 1rem;
-     }
+    .content-test {
+        width: 100%; /* Make content-test full width */
+        height: auto; /* Adjust height for content */
+        pointer-events: auto;
+        transform: translateY(10); /* Reset the transform */
+    }
  }
 
- .content_testimonial-1 .picto {
-     height: 60px;
-     width: 200px;
-     background-image: url("/img/nic.png");
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
-
+  
  .content_testimonial-1 h1 {
      color: #448fdf;
      text-align: center;
  }
 
- .content_testimonial-2 .picto {
-     height: 100px;
-     width: 200px;
-     background-image: url("/img/brainworm-logo.png");
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
+  
 
  .content_testimonial-2 h1 {
      color: #f5d76e;
  }
 
 
-
- .content_testimonial-4 .picto {
-     height: 100px;
-     width: 200px;
-     background-image: url("/img/Chegg-Logo.png");
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
 
  .content_testimonial-4 h1 {
      color: #f27935;
@@ -1352,42 +1233,37 @@ body{
  }
 
  input:checked~label.label_testimonial-1 {
-     color: #d64541;
-     /* border-right: solid 4px #d64541; */
+     color: #41bdd6;
+     
  }
 
  input:checked~label.label_testimonial-2 {
-     color: #f5d76e;
-     /* border-right: solid 4px #f5d76e; */
+     color: #41bdd6;
+      
  }
 
 
  input:checked~label.label_testimonial-4 {
-     color: #f27935;
-     /* border-right: solid 4px #f27935; */
+     color: #41bdd6;
+      
  }
-
-
-
-
-
-
+ 
  p.testimonialState {
      margin-top: -5px;
      font-size: 0.8rem;
-     font-style: italic;
-     color: #808080d4;
+     font-weight: bolder;
+     color: #1fb9d7;
  }
 
  p.testimonialFrom {
      margin-top: 5px;
-     font-weight: bold;
+     font-weight: bolder;
      color: #33475c;
      font-size: 1.5rem;
 
  }
 
- /* ============== End Testimonial Flexbox ============= */
+ /* ============== End Experience Flexbox ============= */
 
  
 
@@ -2084,7 +1960,7 @@ body{
 
 
 
-
+/* EDUCATION section */
 
  .main-timeline {
      position: relative
@@ -2357,7 +2233,7 @@ body{
 
 
 
- /* FLOW CHART */
+/* End Education section */
  
 
 
@@ -2705,5 +2581,138 @@ section {
 
 
 
-  /* Service section */
+ /* CONTACT SECTION */
+
+ .contact .row {
+    padding: 5%;
+
+}
+
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+    top: 90%;
+    left: -110%;
+}
+
+.social-btns .btn .fa {
+    transform: scale(.8);
+}
+
+.social-btns .btn.facebook:before {
+    background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fa {
+    color: #3b5998;
+}
+
+.social-btns .btn.twitter:before {
+    background-color: #3cf;
+}
+
+.social-btns .btn.twitter .fa {
+    color: #3cf;
+}
+
+.social-btns .btn.google:before {
+    background-color: #dc4a39;
+}
+
+.social-btns .btn.google .fa {
+    color: #dc4a38;
+}
+
+.social-btns .btn.dribbble:before {
+    background-color: #f26798;
+}
+
+.social-btns .btn.dribbble .fa {
+    color: #f26798;
+}
+
+.social-btns .btn.skype:before {
+    background-color: #00aff0;
+}
+
+.social-btns .btn.skype .fa {
+    color: #00aff0;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+    color: #fff;
+    transform: scale(1);
+}
+
+
+
+.social-btns .btn {
+    display: inline-block;
+    /* background-color: #fff; */
+    width: 60px;
+    height: 60px;
+    line-height: 42px;
+    margin: 5%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 3px 7px 0px rgba(217, 217, 217, 0.934);
+    opacity: 1;
+}
+
+.social-btns .btn:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.social-btns .btn .fa {
+    font-size: 37px;
+    vertical-align: middle;
+    margin: 4px 0px;
+}
+
+/* END CONTACT SECTION */
   
+/* SKILLS SECTION */
+ 
+  .skills {
+    margin: auto;
+    text-align: center;
+  }
+  
+  #c {
+    margin: auto;
+  }
+  
+  .header {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    height: 25px;
+  }
+  
+  .pentagon {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 3px 3px 28px 3px;
+    display:inline-block;
+  }
+/* END SKILLS SECTION */
