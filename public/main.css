@@ -1181,22 +1181,26 @@ body{
  @media (max-width: 480px) {
     #flex-container {
         display: flex;
-        flex-direction: column; /* Ensure the layout is vertical */
+        flex-direction: column; /* Change direction to stack vertically */
         justify-content: flex-start;
         align-items: stretch;
         min-height: auto;
         height: auto;
-        width: 100%;}
-        
-    #left-zone {
-        display: none; /* Hide the left zone */
-        
+        width: 100%;
     }
-    
-    #right-zone {
+    #left-zone {
         width: 100%; /* Take full width */
         height: auto; /* Adjust height for content */
         
+    }
+    #left-zone .list {
+    text-align: center;
+
+    }
+    #right-zone {
+        width: 100%; /* Take full width */
+        height: auto; /* Adjust height for content */
+        padding: 70% 0;
     }
 
     .content-test {
