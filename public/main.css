@@ -2528,15 +2528,12 @@ section {
     grid-template-columns: 50% 45%;
     place-items: center;
     gap: 60px;
-    min-height: 100vh;
+   
     padding: 20px 60px;
   }
   
   /* CONTENT */
   
-  .content5 {
-    max-width: 2400px;
-  }
   
   .content5 h1 {
     font-family: "Comfortaa", sans-serif;
@@ -2659,29 +2656,7 @@ section {
   .star {
     color: #afe312;
   }
-  
-  .logo {
-    position: fixed;
-    right: -20px;
-    bottom: -30px;
-    z-index: 10;
-  }
-  
-  .logo img {
-    width: 120px;
-  }
-  
-  @media (max-width: 890px) {
-    .logo {
-    right: -10px;
-    bottom: -20px;
-  }
-    
-   .logo img {
-    width: 80px;
-    }
-  }
-  
+   
   @media (max-width: 1050px) {
     .swiper {
       width: 350px;
@@ -2705,12 +2680,12 @@ section {
       grid-area: slider;
     }
   
-    .content {
+    .content5 {
       grid-area: content;
       text-align: center;
     }
   
-    .content h1 {
+    .content5 h1 {
       margin-bottom: 20px;
     }
   }
