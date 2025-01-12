@@ -1255,13 +1255,13 @@ body{
  p.testimonialState {
      margin-top: -5px;
      font-size: 0.8rem;
-     font-weight: bolder;
+     
      color: #1fb9d7;
  }
 
  p.testimonialFrom {
      margin-top: 5px;
-     font-weight: bolder;
+     font-weight: b;
      color: #33475c;
      font-size: 1.5rem;
 
