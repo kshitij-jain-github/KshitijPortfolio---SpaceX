@@ -4,7 +4,8 @@
 
 
 body{   
-     font-family: "Lucida Console", "Courier New", monospace;  
+     letter-spacing: 3px;
+     
 }
 
  
@@ -844,10 +845,6 @@ body{
 
  }
 
-
-
-
-
  .planet {
      width: 400px;
      height: 400px;
@@ -995,6 +992,7 @@ body{
 
 
  /* ============= Begin Experience section   ============ */
+
  #flex-container {
      display: -webkit-box;
      display: -ms-flexbox;
@@ -1277,697 +1275,6 @@ body{
 
 
 
-
-/* UFO */
-
- .flying-wrapper {
-     height: 55px;
-     position: absolute;
-     width: 160px;
-     animation: flyHigh 13s linear infinite;
-     -webkit-animation: flyHigh 13s linear infinite;
-     -moz-animation: flyHigh 13s linear infinite;
-     -ms-animation: flyHigh 13s linear infinite;
-     -o-animation: flyHigh 13s linear infinite;
-     left: 10vh;
-     top: 10vh;
-     z-index: -999;
- }
-
- .flying-saucer {
-     background-color: #4c5365;
-     border-radius: 100%;
-     box-shadow: inset 0px 2px 15px #616a83;
-     height: 55px;
-     position: absolute;
-     width: 95px;
-     z-index: 4;
- }
-
- .flying-saucer:after {
-     background-color: #15171c;
-     border-radius: 15% 15% 90% 90%;
-     bottom: -8px;
-     content: "";
-     height: 8px;
-     left: 0;
-     margin: auto;
-     position: absolute;
-     right: 0;
-     width: 70px;
-     z-index: -1;
- }
-
- .flying-saucer:before {
-     background-color: #20232B;
-     border-radius: 160px/30px;
-     box-shadow: 1px 1px 1px 0px #195f6e;
-     content: "";
-     height: 30px;
-     left: -32.5px;
-     position: absolute;
-     top: 25px;
-     width: 160px;
-     animation: ufoLightsShineShadow 2s linear infinite;
-     -webkit-animation: ufoLightsShineShadow 2s linear infinite;
-     -moz-animation: ufoLightsShineShadow 2s linear infinite;
-     -ms-animation: ufoLightsShineShadow 2s linear infinite;
-     -o-animation: ufoLightsShineShadow 2s linear infinite;
- }
-
- .lights,
- .lights:before,
- .lights:after {
-     background-color: #36B5D1;
-     border-radius: 100%;
-     height: 3px;
-     left: 0px;
-     margin: auto;
-     position: absolute;
-     right: 0;
-     top: 45px;
-     width: 4px;
-     animation: ufoLightsShine 2s linear infinite;
-     -webkit-animation: ufoLightsShine 2s linear infinite;
-     -moz-animation: ufoLightsShine 2s linear infinite;
-     -ms-animation: ufoLightsShine 2s linear infinite;
-     -o-animation: ufoLightsShine 2s linear infinite;
- }
-
- .lights:after {
-     content: "";
-     left: -70px;
-     top: -1px;
- }
-
- .lights:before {
-     content: "";
-     left: 40px;
-     top: -1px;
- }
-
- .abduction-light {
-     border-bottom: 200px solid #F7E29C;
-     border-left: 140px solid transparent;
-     border-right: 140px solid transparent;
-     bottom: -170px;
-     height: 0px;
-     left: -91.5px;
-     position: absolute;
-     width: 0px;
-     z-index: 3;
-     animation: abductLights 13s linear infinite;
-     -webkit-animation: abductLights 13s linear infinite;
-     -moz-animation: abductLights 13s linear infinite;
-     -ms-animation: abductLights 13s linear infinite;
-     -o-animation: abductLights 13s linear infinite;
- }
-
- @keyframes abductLights {
-     0% {
-         opacity: 0;
-     }
-
-     60% {
-         opacity: 0;
-     }
-
-     61% {
-         opacity: 0.25;
-     }
-
-     70% {
-         opacity: 0.5;
-     }
-
-     88% {
-         opacity: 0.25;
-     }
-
-     89% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 0;
-     }
- }
-
- @-webkit-keyframes abductLights {
-     0% {
-         opacity: 0;
-     }
-
-     60% {
-         opacity: 0;
-     }
-
-     61% {
-         opacity: 0.25;
-     }
-
-     70% {
-         opacity: 0.5;
-     }
-
-     88% {
-         opacity: 0.25;
-     }
-
-     89% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 0;
-     }
- }
-
- @-moz-keyframes abductLights {
-     0% {
-         opacity: 0;
-     }
-
-     60% {
-         opacity: 0;
-     }
-
-     61% {
-         opacity: 0.25;
-     }
-
-     70% {
-         opacity: 0.5;
-     }
-
-     88% {
-         opacity: 0.25;
-     }
-
-     89% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 0;
-     }
- }
-
- @-ms-keyframes abductLights {
-     0% {
-         opacity: 0;
-     }
-
-     60% {
-         opacity: 0;
-     }
-
-     61% {
-         opacity: 0.25;
-     }
-
-     70% {
-         opacity: 0.5;
-     }
-
-     88% {
-         opacity: 0.25;
-     }
-
-     89% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 0;
-     }
- }
-
- @keyframes ufoLightsShine {
-     0% {
-         background-color: #195f6e;
-     }
-
-     20% {
-         background-color: #9edbe9;
-     }
-
-     40% {
-         background-color: #1e7183;
-     }
-
-     60% {
-         background-color: #9edbe9;
-     }
-
-     80% {
-         background-color: #1e7183;
-     }
-
-     100% {
-         background-color: #9edbe9;
-     }
- }
-
- @-webkit-keyframes ufoLightsShine {
-     0% {
-         background-color: #195f6e;
-     }
-
-     20% {
-         background-color: #9edbe9;
-     }
-
-     40% {
-         background-color: #1e7183;
-     }
-
-     60% {
-         background-color: #9edbe9;
-     }
-
-     80% {
-         background-color: #1e7183;
-     }
-
-     100% {
-         background-color: #9edbe9;
-     }
- }
-
- @-moz-keyframes ufoLightsShine {
-     0% {
-         background-color: #195f6e;
-     }
-
-     20% {
-         background-color: #9edbe9;
-     }
-
-     40% {
-         background-color: #1e7183;
-     }
-
-     60% {
-         background-color: #9edbe9;
-     }
-
-     80% {
-         background-color: #1e7183;
-     }
-
-     100% {
-         background-color: #9edbe9;
-     }
- }
-
- @-ms-keyframes ufoLightsShine {
-     0% {
-         background-color: #195f6e;
-     }
-
-     20% {
-         background-color: #9edbe9;
-     }
-
-     40% {
-         background-color: #1e7183;
-     }
-
-     60% {
-         background-color: #9edbe9;
-     }
-
-     80% {
-         background-color: #1e7183;
-     }
-
-     100% {
-         background-color: #9edbe9;
-     }
- }
-
- @keyframes ufoLightsShineShadow {
-     0% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     20% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     40% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     60% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     80% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     100% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
- }
-
- @-webkit-keyframes ufoLightsShineShadow {
-     0% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     20% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     40% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     60% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     80% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     100% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
- }
-
- @-moz-keyframes ufoLightsShineShadow {
-     0% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     20% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     40% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     60% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     80% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     100% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
- }
-
- @-ms-keyframes ufoLightsShineShadow {
-     0% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     20% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     40% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     60% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
-
-     80% {
-         box-shadow: 1px 1px 1px 0px #1e7183;
-     }
-
-     100% {
-         box-shadow: 1px 1px 1px 0px #9edbe9;
-     }
- }
-
- @keyframes flyHigh {
-     0% {
-         left: -10vw;
-         top: 20vh;
-     }
-
-     10% {
-         left: 5vw;
-         top: 40vh;
-     }
-
-     30% {
-         left: 25vw;
-         top: 0vh;
-     }
-
-     40% {
-         left: 75vw;
-         top: 25vh;
-     }
-
-     60% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     65% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     70% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     75% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     80% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     85% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     90% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     100% {
-         left: 105vw;
-         top: 10vh;
-     }
- }
-
- @-webkit-keyframes flyHigh {
-     0% {
-         left: -10vw;
-         top: 20vh;
-     }
-
-     10% {
-         left: 5vw;
-         top: 40vh;
-     }
-
-     30% {
-         left: 25vw;
-         top: 0vh;
-     }
-
-     40% {
-         left: 75vw;
-         top: 25vh;
-     }
-
-     60% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     65% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     70% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     75% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     80% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     85% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     90% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     100% {
-         left: 105vw;
-         top: 10vh;
-     }
- }
-
- @-moz-keyframes flyHigh {
-     0% {
-         left: -10vw;
-         top: 20vh;
-     }
-
-     10% {
-         left: 5vw;
-         top: 40vh;
-     }
-
-     30% {
-         left: 25vw;
-         top: 0vh;
-     }
-
-     40% {
-         left: 75vw;
-         top: 25vh;
-     }
-
-     60% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     65% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     70% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     75% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     80% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     85% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     90% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     100% {
-         left: 105vw;
-         top: 10vh;
-     }
- }
-
- @-ms-keyframes flyHigh {
-     0% {
-         left: -10vw;
-         top: 20vh;
-     }
-
-     10% {
-         left: 5vw;
-         top: 40vh;
-     }
-
-     30% {
-         left: 25vw;
-         top: 0vh;
-     }
-
-     40% {
-         left: 75vw;
-         top: 25vh;
-     }
-
-     60% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     65% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     70% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     75% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     80% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     85% {
-         left: 30vw;
-         top: 68vh;
-     }
-
-     90% {
-         left: 30vw;
-         top: 67vh;
-     }
-
-     100% {
-         left: 105vw;
-         top: 10vh;
-     }
- }
-
-
-
-
-
-
-
-
-
-
 /* EDUCATION section */
 
  .main-timeline {
@@ -2244,350 +1551,7 @@ body{
 /* End Education section */
  
 
-
-  /* ACHIEVEMENTS SECTION USING SWIPER */
  
- .content2 {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   gap: 30px;
-   background: linear-gradient(
-     180deg,
-     rgba(255, 255, 255, 0.28) 0%,
-     rgba(255, 255, 255, 0) 100%
-   );
-   backdrop-filter: blur(30px);
-   border-radius: 20px;
-   width: min(900px, 100%);
-   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
-     0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
-   z-index: 10;
- }
- 
- .info1 {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   max-width: 450px;
-   padding: 0 35px;
-   text-align: justify;
- }
- 
- .info1 p {
-   color: #fff;
-   font-weight: 500;
-   font-size: 1rem;
-   margin-bottom: 20px;
-   line-height: 1.5;
- }
- 
- .movie-night {
-   background: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
- }
- 
- .btn1 {
-   display: block;
-   padding: 10px 40px;
-   margin: 10px auto;
-   font-size: 1.1rem;
-   font-weight: 700;
-   border-radius: 4px;
-   outline: none;
-   text-decoration: none;
-   color: #784ba0;
-   background: rgba(255, 255, 255, 0.9);
-   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
-   border: 1px solid rgba(255, 255, 255, 0.3);
-   cursor: pointer;
- }
- 
- .btn:hover {
-   animation: gelatine 0.5s 1;
- }
- 
- @keyframes gelatine {
-   0%,
-   100% {
-     transform: scale(1, 1);
-   }
-   25% {
-     transform: scale(0.9, 1.1);
-   }
-   50% {
-     transform: scale(1.1, 0.9);
-   }
-   75% {
-     transform: scale(0.95, 1.05);
-   }
- }
- 
- /* SWIPER */
- 
- .swiper1 {
-   width: 250px;
-   height: 450px;
-   padding: 50px 0;
- }
- 
- .swiper-slide {
-   position: relative;
-   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-   border-radius: 10px;
-   user-select: none;
- }
- 
- .swiper-slide img {
-   position: absolute;
-   inset: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
- 
- .img-position {
-   object-position: 50% 0%;
- }
- 
- .overlay {
-   position: absolute;
-   inset: 0;
-   width: 100%;
-   height: 100%;
-   background: linear-gradient(to top, #0f2027, transparent, transparent);
-   background-repeat: no-repeat;
-   background-size: cover;
- }
- 
- .overlay span {
-   position: absolute;
-   top: 0;
-   right: 0;
-   color: #fff;
-   padding: 7px 18px;
-   margin: 10px;
-   border-radius: 20px;
-   letter-spacing: 2px;
-   font-size: 0.8rem;
-   font-weight: 700;
-   font-family: inherit;
-   background: rgba(255, 255, 255, 0.095);
-   box-shadow: inset 2px -2px 20px rgba(214, 214, 214, 0.2),
-     inset -3px 3px 3px rgba(255, 255, 255, 0.4);
-   backdrop-filter: blur(74px);
- }
- 
- .overlay h2 {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   color: #fff;
-   font-weight: 400;
-   font-size: 1.1rem;
-   line-height: 1.4;
-   margin: 0 0 20px 20px;
- }
- 
-  
- 
- @media (max-width: 750px) {
-   .content {
-      flex-direction: column-reverse;
-   }
-   
-   .btn {
-     margin: 10px auto 40px;
-   }
- }
- 
-
-
-
- /* Project  */
-
-section {
-    display: grid;
-    grid-template-columns: 50% 45%;
-    place-items: center;
-    gap: 60px;
-   
-    padding: 20px 60px;
-  }
-  
-  /* CONTENT */
-  
-  
-  .content5 h1 {
-    font-family: "Comfortaa", sans-serif;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    margin-bottom: 36px;
-    color: #fff;
-  }
-  
-  .content5 p {
-    font-size: clamp(0.9rem, 3vw, 1.25rem);
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    color: #fff;
-  }
-  
-  .content5 button {
-    background: #eaeaea;
-    color: #202134;
-    font-size: clamp(0.9rem, 4vw, 1rem);
-    font-weight: 600;
-    border: 0;
-    outline: 0;
-    padding: 8px 14px;
-    border-radius: 7px;
-    transform: scale(1);
-    transition: all 0.4s ease-in;
-    cursor: pointer;
-  }
-  
-  .content5 button:is(:hover, :focus) {
-    transform: scale(0.98);
-    background-color: #6f7aa6;
-    color: #eaeaea;
-  }
-  
-  /* SLIDER */
-  
-  .swiper {
-    position: relative;
-    width: 400px;
-    height: 490px;
-  }
-  
-  .swiper-slide {
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    user-select: none;
-    border-radius: 20px;
-  }
-  
-  .cost {
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    padding: 6px 10px;
-    color: #fff;
-    font-size: clamp(0.8rem, 4vw, 0.9rem);
-    font-weight: 600;
-  }
-  
-  .dark-text {
-    color: #202134;
-  }
-  
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-  }
-  
-  .overlay {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    padding: 10px 20px;
-    background: rgba(93, 95, 145, 0.2);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    color: #fff;
-    border-radius: 0 0 20px 20px;
-  }
-  
-  .overlay h1 {
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
-    font-weight: 600;
-  }
-  
-  .overlay p {
-    font-size: clamp(0.8rem, 4vw, 0.9rem);
-    font-weight: 300;
-    line-height: 1.3;
-  }
-  
-  .ratings {
-    display: flex;
-    column-gap: 10px;
-    margin-top: -6px;
-  }
-  
-  .ratings span {
-    font-size: clamp(0.8rem, 4vw, 0.9rem);
-    font-weight: 300;
-  }
-  
-  .star {
-    color: #afe312;
-  }
-   
-  @media (max-width: 1050px) {
-    .swiper {
-      width: 350px;
-      height: 450px;
-    }
-  }
-  
-  @media (max-width: 930px) {
-    section {
-      grid-template-columns: 100%;
-      grid-template-rows: 55% 40%;
-      grid-template-areas:
-        "slider"
-        "content";
-      place-items: center;
-      gap: 64px;
-      padding: 60px;
-    }
-  
-    .swiper {
-      grid-area: slider;
-    }
-  
-    .content5 {
-      grid-area: content;
-      text-align: center;
-    }
-  
-    .content5 h1 {
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media (max-width: 470px) {
-    section {
-      padding: 40px 40px 60px;
-    }
-  
-    .swiper {
-      width: 300px;
-      height: 400px;
-    }
-  }
-
-
-
-
 
  /* CONTACT SECTION */
 
@@ -2698,29 +1662,800 @@ section {
 
 /* END CONTACT SECTION */
   
+
+
+
 /* SKILLS SECTION */
  
-  .skills {
-    margin: auto;
+ .skill-type{
+     
+    margin:45px auto;
     text-align: center;
+ }
+ .type-heading{
+    color:#ffffff;
+    padding-bottom: 12px;
+ }
+
+.badge {
+    position: relative;
+    text-decoration: none;
+    padding: 8px 16px;
+    
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(30, 29, 29, 0.885);
+    margin: 0 7px ;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);     
+   
+    user-select: none;
+    
   }
-  
-  #c {
-    margin: auto;
+  .badge p{
+    margin:0;
+    font-size: 14px;
   }
-  
-  .header {
-    text-align: center;
-    width: 100%;
-    margin: auto;
+  .badge span {
+    width: 25px;
     height: 25px;
+    position: absolute;
+    top: -12px;
+    right: -2px;
+    transform: rotate(-20deg);
+    filter: blur(0.5px);
   }
   
-  .pentagon {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    padding: 3px 3px 28px 3px;
-    display:inline-block;
+  .badge span:before,
+  .badge span:after {
+    content: "";
+    position: absolute;
   }
+  
+  .badge span:before {
+    width: 1px;
+    height: 100%;
+    left: 12px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.7),
+      transparent
+    );
+  }
+  
+  .badge span:after {
+    width: 100%;
+    height: 1px;
+    top: 12px;
+    background: linear-gradient(
+      to left,
+      transparent,
+      rgba(255, 255, 255, 0.7),
+      transparent
+    );
+  }
+  
+  .badge:hover span:after {
+    display: block;
+    animation: rotate 3s ease-in-out; /* Adjust timing as needed */
+  }
+  .badge:hover span::before {
+    display: block;
+    animation: rotate 3s ease-in-out; /* Adjust timing as needed */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.8);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  .badge:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(67, 62, 62, 0.336);
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 15px;
+  }
+   
+  
 /* END SKILLS SECTION */
+
+
+
+/* UFO BEGINNING */
+
+ 
+
+.flying-wrapper {
+    height: 55px;
+    position: absolute;
+    width: 160px;
+    animation: flyHigh 13s linear infinite;
+    -webkit-animation: flyHigh 13s linear infinite;
+    -moz-animation: flyHigh 13s linear infinite;
+    -ms-animation: flyHigh 13s linear infinite;
+    -o-animation: flyHigh 13s linear infinite;
+    left: 10vh;
+    top: 10vh;
+    z-index: -999;
+}
+
+.flying-saucer {
+    background-color: #4c5365;
+    border-radius: 100%;
+    box-shadow: inset 0px 2px 15px #616a83;
+    height: 55px;
+    position: absolute;
+    width: 95px;
+    z-index: 4;
+}
+
+.flying-saucer:after {
+    background-color: #15171c;
+    border-radius: 15% 15% 90% 90%;
+    bottom: -8px;
+    content: "";
+    height: 8px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 70px;
+    z-index: -1;
+}
+
+.flying-saucer:before {
+    background-color: #20232B;
+    border-radius: 160px/30px;
+    box-shadow: 1px 1px 1px 0px #195f6e;
+    content: "";
+    height: 30px;
+    left: -32.5px;
+    position: absolute;
+    top: 25px;
+    width: 160px;
+    animation: ufoLightsShineShadow 2s linear infinite;
+    -webkit-animation: ufoLightsShineShadow 2s linear infinite;
+    -moz-animation: ufoLightsShineShadow 2s linear infinite;
+    -ms-animation: ufoLightsShineShadow 2s linear infinite;
+    -o-animation: ufoLightsShineShadow 2s linear infinite;
+}
+
+.lights,
+.lights:before,
+.lights:after {
+    background-color: #36B5D1;
+    border-radius: 100%;
+    height: 3px;
+    left: 0px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 4px;
+    animation: ufoLightsShine 2s linear infinite;
+    -webkit-animation: ufoLightsShine 2s linear infinite;
+    -moz-animation: ufoLightsShine 2s linear infinite;
+    -ms-animation: ufoLightsShine 2s linear infinite;
+    -o-animation: ufoLightsShine 2s linear infinite;
+}
+
+.lights:after {
+    content: "";
+    left: -70px;
+    top: -1px;
+}
+
+.lights:before {
+    content: "";
+    left: 40px;
+    top: -1px;
+}
+
+.abduction-light {
+    border-bottom: 200px solid #F7E29C;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    bottom: -170px;
+    height: 0px;
+    left: -91.5px;
+    position: absolute;
+    width: 0px;
+    z-index: 3;
+    animation: abductLights 13s linear infinite;
+    -webkit-animation: abductLights 13s linear infinite;
+    -moz-animation: abductLights 13s linear infinite;
+    -ms-animation: abductLights 13s linear infinite;
+    -o-animation: abductLights 13s linear infinite;
+}
+
+@keyframes abductLights {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    61% {
+        opacity: 0.25;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    88% {
+        opacity: 0.25;
+    }
+
+    89% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes abductLights {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    61% {
+        opacity: 0.25;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    88% {
+        opacity: 0.25;
+    }
+
+    89% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes abductLights {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    61% {
+        opacity: 0.25;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    88% {
+        opacity: 0.25;
+    }
+
+    89% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes abductLights {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    61% {
+        opacity: 0.25;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    88% {
+        opacity: 0.25;
+    }
+
+    89% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ufoLightsShine {
+    0% {
+        background-color: #195f6e;
+    }
+
+    20% {
+        background-color: #9edbe9;
+    }
+
+    40% {
+        background-color: #1e7183;
+    }
+
+    60% {
+        background-color: #9edbe9;
+    }
+
+    80% {
+        background-color: #1e7183;
+    }
+
+    100% {
+        background-color: #9edbe9;
+    }
+}
+
+@-webkit-keyframes ufoLightsShine {
+    0% {
+        background-color: #195f6e;
+    }
+
+    20% {
+        background-color: #9edbe9;
+    }
+
+    40% {
+        background-color: #1e7183;
+    }
+
+    60% {
+        background-color: #9edbe9;
+    }
+
+    80% {
+        background-color: #1e7183;
+    }
+
+    100% {
+        background-color: #9edbe9;
+    }
+}
+
+@-moz-keyframes ufoLightsShine {
+    0% {
+        background-color: #195f6e;
+    }
+
+    20% {
+        background-color: #9edbe9;
+    }
+
+    40% {
+        background-color: #1e7183;
+    }
+
+    60% {
+        background-color: #9edbe9;
+    }
+
+    80% {
+        background-color: #1e7183;
+    }
+
+    100% {
+        background-color: #9edbe9;
+    }
+}
+
+@-ms-keyframes ufoLightsShine {
+    0% {
+        background-color: #195f6e;
+    }
+
+    20% {
+        background-color: #9edbe9;
+    }
+
+    40% {
+        background-color: #1e7183;
+    }
+
+    60% {
+        background-color: #9edbe9;
+    }
+
+    80% {
+        background-color: #1e7183;
+    }
+
+    100% {
+        background-color: #9edbe9;
+    }
+}
+
+@keyframes ufoLightsShineShadow {
+    0% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    20% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    40% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    60% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    80% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    100% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+}
+
+@-webkit-keyframes ufoLightsShineShadow {
+    0% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    20% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    40% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    60% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    80% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    100% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+}
+
+@-moz-keyframes ufoLightsShineShadow {
+    0% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    20% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    40% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    60% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    80% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    100% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+}
+
+@-ms-keyframes ufoLightsShineShadow {
+    0% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    20% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    40% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    60% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+
+    80% {
+        box-shadow: 1px 1px 1px 0px #1e7183;
+    }
+
+    100% {
+        box-shadow: 1px 1px 1px 0px #9edbe9;
+    }
+}
+
+@keyframes flyHigh {
+    0% {
+        left: -10vw;
+        top: 20vh;
+    }
+
+    10% {
+        left: 5vw;
+        top: 40vh;
+    }
+
+    30% {
+        left: 25vw;
+        top: 0vh;
+    }
+
+    40% {
+        left: 75vw;
+        top: 25vh;
+    }
+
+    60% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    65% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    70% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    75% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    80% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    85% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    90% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    100% {
+        left: 105vw;
+        top: 10vh;
+    }
+}
+
+@-webkit-keyframes flyHigh {
+    0% {
+        left: -10vw;
+        top: 20vh;
+    }
+
+    10% {
+        left: 5vw;
+        top: 40vh;
+    }
+
+    30% {
+        left: 25vw;
+        top: 0vh;
+    }
+
+    40% {
+        left: 75vw;
+        top: 25vh;
+    }
+
+    60% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    65% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    70% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    75% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    80% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    85% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    90% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    100% {
+        left: 105vw;
+        top: 10vh;
+    }
+}
+
+@-moz-keyframes flyHigh {
+    0% {
+        left: -10vw;
+        top: 20vh;
+    }
+
+    10% {
+        left: 5vw;
+        top: 40vh;
+    }
+
+    30% {
+        left: 25vw;
+        top: 0vh;
+    }
+
+    40% {
+        left: 75vw;
+        top: 25vh;
+    }
+
+    60% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    65% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    70% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    75% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    80% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    85% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    90% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    100% {
+        left: 105vw;
+        top: 10vh;
+    }
+}
+
+@-ms-keyframes flyHigh {
+    0% {
+        left: -10vw;
+        top: 20vh;
+    }
+
+    10% {
+        left: 5vw;
+        top: 40vh;
+    }
+
+    30% {
+        left: 25vw;
+        top: 0vh;
+    }
+
+    40% {
+        left: 75vw;
+        top: 25vh;
+    }
+
+    60% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    65% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    70% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    75% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    80% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    85% {
+        left: 30vw;
+        top: 68vh;
+    }
+
+    90% {
+        left: 30vw;
+        top: 67vh;
+    }
+
+    100% {
+        left: 105vw;
+        top: 10vh;
+    }
+}
+
+/* UFO END */
