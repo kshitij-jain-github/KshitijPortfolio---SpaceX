@@ -11,7 +11,7 @@
     if (t)
       if (t.forEach) t.forEach(e, i);
       else if (t.length !== n)
-        for (s = 0; s < t.length; ) e.call(i, t[s], s, t), s++;
+        for (s = 0; s < t.length;) e.call(i, t[s], s, t), s++;
       else for (s in t) t.hasOwnProperty(s) && e.call(i, t[s], s, t);
   }
   function a(e, i, n) {
@@ -21,9 +21,9 @@
         n =
           i && i.stack
             ? i.stack
-                .replace(/^[^\(]+?[\n$]/gm, "")
-                .replace(/^\s+at\s+/gm, "")
-                .replace(/^Object.<anonymous>\s*\(/gm, "{anonymous}()@")
+              .replace(/^[^\(]+?[\n$]/gm, "")
+              .replace(/^\s+at\s+/gm, "")
+              .replace(/^Object.<anonymous>\s*\(/gm, "{anonymous}()@")
             : "Unknown Stack Trace",
         r = t.console && (t.console.warn || t.console.log);
       return r && r.call(t.console, s, n), e.apply(this, arguments);
@@ -59,7 +59,7 @@
     });
   }
   function f(t, e) {
-    for (; t; ) {
+    for (; t;) {
       if (t == e) return !0;
       t = t.parentNode;
     }
@@ -73,7 +73,7 @@
   }
   function g(t, e, i) {
     if (t.indexOf && !i) return t.indexOf(e);
-    for (var n = 0; n < t.length; ) {
+    for (var n = 0; n < t.length;) {
       if ((i && t[n][i] == e) || (!i && t[n] === e)) return n;
       n++;
     }
@@ -83,17 +83,17 @@
     return Array.prototype.slice.call(t, 0);
   }
   function y(t, e, i) {
-    for (var n = [], s = [], r = 0; r < t.length; ) {
+    for (var n = [], s = [], r = 0; r < t.length;) {
       var o = e ? t[r][e] : t[r];
       g(s, o) < 0 && n.push(t[r]), (s[r] = o), r++;
     }
     return (
       i &&
-        (n = e
-          ? n.sort(function a(t, i) {
-              return t[e] > i[e];
-            })
-          : n.sort()),
+      (n = e
+        ? n.sort(function a(t, i) {
+          return t[e] > i[e];
+        })
+        : n.sort()),
       n
     );
   }
@@ -185,7 +185,7 @@
       r = t.prevInput || {};
     (e.eventType !== Pt && r.eventType !== Rt) ||
       ((s = t.prevDelta = { x: r.deltaX || 0, y: r.deltaY || 0 }),
-      (n = t.offsetDelta = { x: i.x, y: i.y })),
+        (n = t.offsetDelta = { x: i.x, y: i.y })),
       (e.deltaX = s.x + (i.x - n.x)),
       (e.deltaY = s.y + (i.y - n.y));
   }
@@ -210,7 +210,7 @@
     (e.velocity = r), (e.velocityX = o), (e.velocityY = a), (e.direction = l);
   }
   function b(t) {
-    for (var e = [], i = 0; i < t.pointers.length; )
+    for (var e = [], i = 0; i < t.pointers.length;)
       (e[i] = {
         clientX: vt(t.pointers[i].clientX),
         clientY: vt(t.pointers[i].clientY),
@@ -227,7 +227,7 @@
   function P(t) {
     var e = t.length;
     if (1 === e) return { x: vt(t[0].clientX), y: vt(t[0].clientY) };
-    for (var i = 0, n = 0, s = 0; e > s; )
+    for (var i = 0, n = 0, s = 0; e > s;)
       (i += t[s].clientX), (n += t[s].clientY), s++;
     return { x: vt(i / e), y: vt(n / e) };
   }
@@ -295,10 +295,10 @@
       ((r = i.filter(function (t) {
         return f(t.target, l);
       })),
-      e === Pt)
+        e === Pt)
     )
-      for (s = 0; s < r.length; ) (n[r[s].identifier] = !0), s++;
-    for (s = 0; s < o.length; )
+      for (s = 0; s < r.length;) (n[r[s].identifier] = !0), s++;
+    for (s = 0; s < o.length;)
       n[o[s].identifier] && a.push(o[s]),
         e & (Rt | Mt) && delete n[o[s].identifier],
         s++;
@@ -378,23 +378,23 @@
     return t & ye
       ? "cancel"
       : t & ge
-      ? "end"
-      : t & me
-      ? "move"
-      : t & ve
-      ? "start"
-      : "";
+        ? "end"
+        : t & me
+          ? "move"
+          : t & ve
+            ? "start"
+            : "";
   }
   function Q(t) {
     return t == kt
       ? "down"
       : t == Yt
-      ? "up"
-      : t == Nt
-      ? "left"
-      : t == Xt
-      ? "right"
-      : "";
+        ? "up"
+        : t == Nt
+          ? "left"
+          : t == Xt
+            ? "right"
+            : "";
   }
   function tt(t, e) {
     var i = e.manager;
@@ -480,25 +480,25 @@
   Tt =
     "function" != typeof Object.assign
       ? function Ie(t) {
-          if (t === n || null === t)
-            throw new TypeError("Cannot convert undefined or null to object");
-          for (var e = Object(t), i = 1; i < arguments.length; i++) {
-            var s = arguments[i];
-            if (s !== n && null !== s)
-              for (var r in s) s.hasOwnProperty(r) && (e[r] = s[r]);
-          }
-          return e;
+        if (t === n || null === t)
+          throw new TypeError("Cannot convert undefined or null to object");
+        for (var e = Object(t), i = 1; i < arguments.length; i++) {
+          var s = arguments[i];
+          if (s !== n && null !== s)
+            for (var r in s) s.hasOwnProperty(r) && (e[r] = s[r]);
         }
+        return e;
+      }
       : Object.assign;
   var yt = a(
-      function we(t, e, i) {
-        for (var s = Object.keys(e), r = 0; r < s.length; )
-          (!i || (i && t[s[r]] === n)) && (t[s[r]] = e[s[r]]), r++;
-        return t;
-      },
-      "extend",
-      "Use `assign`."
-    ),
+    function we(t, e, i) {
+      for (var s = Object.keys(e), r = 0; r < s.length;)
+        (!i || (i && t[s[r]] === n)) && (t[s[r]] = e[s[r]]), r++;
+      return t;
+    },
+    "extend",
+    "Use `assign`."
+  ),
     Ct = a(
       function Ae(t, e) {
         return yt(t, e, !0);
@@ -531,7 +531,7 @@
     Ht = ["x", "y"],
     Lt = ["clientX", "clientY"];
   I.prototype = {
-    handler: function () {},
+    handler: function () { },
     init: function () {
       this.evEl && d(this.element, this.evEl, this.domHandler),
         this.evTarget && d(this.target, this.evTarget, this.domHandler),
@@ -552,7 +552,7 @@
       e & Pt && 0 === t.button && (this.pressed = !0),
         e & Ot && 1 !== t.which && (e = Rt),
         this.pressed &&
-          (e & Rt && (this.pressed = !1),
+        (e & Rt && (this.pressed = !1),
           this.callback(this.manager, e, {
             pointers: [t],
             changedPointers: [t],
@@ -562,19 +562,19 @@
     },
   });
   var Gt = {
-      pointerdown: Pt,
-      pointermove: Ot,
-      pointerup: Rt,
-      pointercancel: Mt,
-      pointerout: Mt,
-    },
+    pointerdown: Pt,
+    pointermove: Ot,
+    pointerup: Rt,
+    pointercancel: Mt,
+    pointerout: Mt,
+  },
     Bt = { 2: At, 3: Dt, 4: _t, 5: St },
     Zt = "pointerdown",
     Jt = "pointermove pointerup pointercancel";
   t.MSPointerEvent &&
     !t.PointerEvent &&
     ((Zt = "MSPointerDown"),
-    (Jt = "MSPointerMove MSPointerUp MSPointerCancel")),
+      (Jt = "MSPointerMove MSPointerUp MSPointerCancel")),
     l(k, I, {
       handler: function _e(t) {
         var e = this.store,
@@ -588,7 +588,7 @@
           ? 0 > a && (e.push(t), (a = e.length - 1))
           : s & (Rt | Mt) && (i = !0),
           0 > a ||
-            ((e[a] = t),
+          ((e[a] = t),
             this.callback(this.manager, s, {
               pointers: e,
               changedPointers: [t],
@@ -662,9 +662,9 @@
     set: function (t) {
       t == ae && (t = this.compute()),
         oe &&
-          this.manager.element.style &&
-          pe[t] &&
-          (this.manager.element.style[re] = t),
+        this.manager.element.style &&
+        pe[t] &&
+        (this.manager.element.style[re] = t),
         (this.actions = t.toLowerCase().trim());
     },
     update: function () {
@@ -696,8 +696,8 @@
       return o && r
         ? void 0
         : s || (r && i & qt) || (o && i & Ft)
-        ? this.preventSrc(e)
-        : void 0;
+          ? this.preventSrc(e)
+          : void 0;
     },
     preventSrc: function (t) {
       (this.manager.session.prevented = !0), t.preventDefault();
@@ -769,7 +769,7 @@
       return this.canEmit() ? this.emit(t) : void (this.state = Ce);
     },
     canEmit: function () {
-      for (var t = 0; t < this.requireFail.length; ) {
+      for (var t = 0; t < this.requireFail.length;) {
         if (!(this.requireFail[t].state & (Ce | fe))) return !1;
         t++;
       }
@@ -783,9 +783,9 @@
           void (this.state & (ve | me | ge | ye) && this.tryEmit(e)))
         : (this.reset(), void (this.state = Ce));
     },
-    process: function (t) {},
-    getTouchAction: function () {},
-    reset: function () {},
+    process: function (t) { },
+    getTouchAction: function () { },
+    reset: function () { },
   }),
     l(et, J, {
       defaults: { pointers: 1 },
@@ -801,12 +801,12 @@
         return n && (i & Mt || !s)
           ? e | ye
           : n || s
-          ? i & Rt
-            ? e | ge
-            : e & ve
-            ? e | me
-            : ve
-          : Ce;
+            ? i & Rt
+              ? e | ge
+              : e & ve
+                ? e | me
+                : ve
+            : Ce;
       },
     }),
     l(it, et, {
@@ -825,13 +825,13 @@
           o = t.deltaY;
         return (
           s & e.direction ||
-            (e.direction & qt
-              ? ((s = 0 === r ? zt : 0 > r ? Nt : Xt),
-                (i = r != this.pX),
-                (n = Math.abs(t.deltaX)))
-              : ((s = 0 === o ? zt : 0 > o ? Yt : kt),
-                (i = o != this.pY),
-                (n = Math.abs(t.deltaY)))),
+          (e.direction & qt
+            ? ((s = 0 === r ? zt : 0 > r ? Nt : Xt),
+              (i = r != this.pX),
+              (n = Math.abs(t.deltaX)))
+            : ((s = 0 === o ? zt : 0 > o ? Yt : kt),
+              (i = o != this.pY),
+              (n = Math.abs(t.deltaY)))),
           (t.direction = s),
           i && n > e.threshold && s & e.direction
         );
@@ -933,14 +933,14 @@
           e & (qt | Ft)
             ? (i = t.overallVelocity)
             : e & qt
-            ? (i = t.overallVelocityX)
-            : e & Ft && (i = t.overallVelocityY),
+              ? (i = t.overallVelocityX)
+              : e & Ft && (i = t.overallVelocityY),
           this._super.attrTest.call(this, t) &&
-            e & t.offsetDirection &&
-            t.distance > this.options.threshold &&
-            t.maxPointers == this.options.pointers &&
-            mt(i) > this.options.velocity &&
-            t.eventType & Rt
+          e & t.offsetDirection &&
+          t.distance > this.options.threshold &&
+          t.maxPointers == this.options.pointers &&
+          mt(i) > this.options.velocity &&
+          t.eventType & Rt
         );
       },
       emit: function (t) {
@@ -981,12 +981,12 @@
           if (0 === l)
             return this.hasRequireFailures()
               ? ((this._timer = s(
-                  function () {
-                    (this.state = Te), this.tryEmit();
-                  },
-                  e.interval,
-                  this
-                )),
+                function () {
+                  (this.state = Te), this.tryEmit();
+                },
+                e.interval,
+                this
+              )),
                 ve)
               : Te;
         }
@@ -1010,7 +1010,7 @@
       emit: function () {
         this.state == Te &&
           ((this._input.tapCount = this.count),
-          this.manager.emit(this.options.event, this._input));
+            this.manager.emit(this.options.event, this._input));
       },
     }),
     (lt.VERSION = "2.0.8"),
@@ -1046,7 +1046,7 @@
         Tt(this.options, t),
         t.touchAction && this.touchAction.update(),
         t.inputTarget &&
-          (this.input.destroy(),
+        (this.input.destroy(),
           (this.input.target = t.inputTarget),
           this.input.init()),
         this
@@ -1063,7 +1063,7 @@
           n = this.recognizers,
           s = e.curRecognizer;
         (!s || (s && s.state & Te)) && (s = e.curRecognizer = null);
-        for (var r = 0; r < n.length; )
+        for (var r = 0; r < n.length;)
           (i = n[r]),
             e.stopped === xe || (s && i != s && !i.canRecognizeWith(s))
               ? i.reset()
@@ -1128,7 +1128,7 @@
           (e.preventDefault = function () {
             e.srcEvent.preventDefault();
           });
-        for (var n = 0; n < i.length; ) i[n](e), n++;
+        for (var n = 0; n < i.length;) i[n](e), n++;
       }
     },
     destroy: function () {
@@ -1189,11 +1189,11 @@
   ($e.Hammer = lt),
     "function" == typeof define && define.amd
       ? define(function () {
-          return lt;
-        })
+        return lt;
+      })
       : "undefined" != typeof module && module.exports
-      ? (module.exports = lt)
-      : (t[i] = lt);
+        ? (module.exports = lt)
+        : (t[i] = lt);
 })(window, document, "Hammer"),
   $(document).ready(function () {
     function t(t) {
@@ -1206,9 +1206,9 @@
           ? ((o = s + 1), e(o), i(s, o, r))
           : (e(o), i(s, o, r))
         : ("swipedown" === t.type || 38 === t.keyCode || 0 > t) &&
-          (0 !== s
-            ? ((o = s - 1), e(o), i(s, o, r))
-            : ((o = r), e(o), i(s, o, r)));
+        (0 !== s
+          ? ((o = s - 1), e(o), i(s, o, r))
+          : ((o = r), e(o), i(s, o, r)));
     }
     function e(t) {
       $(".side-nav, .outer-nav").children().removeClass("is-active"),
@@ -1223,15 +1223,15 @@
           .removeClass("section--next section--prev"),
         (t === i && 0 === e) || (0 === t && e === i)
           ? $(".main-content .section")
-              .children()
-              .removeClass("section--next section--prev")
+            .children()
+            .removeClass("section--next section--prev")
           : e > t
-          ? $(".main-content")
+            ? $(".main-content")
               .children()
               .eq(t)
               .children()
               .addClass("section--next")
-          : $(".main-content")
+            : $(".main-content")
               .children()
               .eq(t)
               .children()
@@ -1277,9 +1277,9 @@
             t.hasClass("slider--next")
               ? a - 1 > i && a - 1 > s && a - 1 > o
                 ? (l
-                    .removeClass("slider--item-left")
-                    .next()
-                    .addClass("slider--item-left"),
+                  .removeClass("slider--item-left")
+                  .next()
+                  .addClass("slider--item-left"),
                   c
                     .removeClass("slider--item-center")
                     .next()
@@ -1289,94 +1289,94 @@
                     .next()
                     .addClass("slider--item-right"))
                 : i === a - 1
-                ? (u
+                  ? (u
                     .removeClass("slider--item-left")
                     .first()
                     .addClass("slider--item-left"),
-                  c
-                    .removeClass("slider--item-center")
-                    .next()
-                    .addClass("slider--item-center"),
-                  h
-                    .removeClass("slider--item-right")
-                    .next()
-                    .addClass("slider--item-right"))
-                : s === a - 1
-                ? (l
-                    .removeClass("slider--item-left")
-                    .next()
-                    .addClass("slider--item-left"),
-                  u
-                    .removeClass("slider--item-center")
-                    .first()
-                    .addClass("slider--item-center"),
-                  h
-                    .removeClass("slider--item-right")
-                    .next()
-                    .addClass("slider--item-right"))
-                : (l
-                    .removeClass("slider--item-left")
-                    .next()
-                    .addClass("slider--item-left"),
-                  c
-                    .removeClass("slider--item-center")
-                    .next()
-                    .addClass("slider--item-center"),
-                  u
-                    .removeClass("slider--item-right")
-                    .first()
-                    .addClass("slider--item-right"))
+                    c
+                      .removeClass("slider--item-center")
+                      .next()
+                      .addClass("slider--item-center"),
+                    h
+                      .removeClass("slider--item-right")
+                      .next()
+                      .addClass("slider--item-right"))
+                  : s === a - 1
+                    ? (l
+                      .removeClass("slider--item-left")
+                      .next()
+                      .addClass("slider--item-left"),
+                      u
+                        .removeClass("slider--item-center")
+                        .first()
+                        .addClass("slider--item-center"),
+                      h
+                        .removeClass("slider--item-right")
+                        .next()
+                        .addClass("slider--item-right"))
+                    : (l
+                      .removeClass("slider--item-left")
+                      .next()
+                      .addClass("slider--item-left"),
+                      c
+                        .removeClass("slider--item-center")
+                        .next()
+                        .addClass("slider--item-center"),
+                      u
+                        .removeClass("slider--item-right")
+                        .first()
+                        .addClass("slider--item-right"))
               : 0 !== i && 0 !== s && 0 !== o
-              ? (l
+                ? (l
                   .removeClass("slider--item-left")
                   .prev()
                   .addClass("slider--item-left"),
-                c
-                  .removeClass("slider--item-center")
-                  .prev()
-                  .addClass("slider--item-center"),
-                h
-                  .removeClass("slider--item-right")
-                  .prev()
-                  .addClass("slider--item-right"))
-              : 0 === i
-              ? (u
-                  .removeClass("slider--item-left")
-                  .last()
-                  .addClass("slider--item-left"),
-                c
-                  .removeClass("slider--item-center")
-                  .prev()
-                  .addClass("slider--item-center"),
-                h
-                  .removeClass("slider--item-right")
-                  .prev()
-                  .addClass("slider--item-right"))
-              : 0 === s
-              ? (l
-                  .removeClass("slider--item-left")
-                  .prev()
-                  .addClass("slider--item-left"),
-                u
-                  .removeClass("slider--item-center")
-                  .last()
-                  .addClass("slider--item-center"),
-                h
-                  .removeClass("slider--item-right")
-                  .prev()
-                  .addClass("slider--item-right"))
-              : (l
-                  .removeClass("slider--item-left")
-                  .prev()
-                  .addClass("slider--item-left"),
-                c
-                  .removeClass("slider--item-center")
-                  .prev()
-                  .addClass("slider--item-center"),
-                u
-                  .removeClass("slider--item-right")
-                  .last()
-                  .addClass("slider--item-right"));
+                  c
+                    .removeClass("slider--item-center")
+                    .prev()
+                    .addClass("slider--item-center"),
+                  h
+                    .removeClass("slider--item-right")
+                    .prev()
+                    .addClass("slider--item-right"))
+                : 0 === i
+                  ? (u
+                    .removeClass("slider--item-left")
+                    .last()
+                    .addClass("slider--item-left"),
+                    c
+                      .removeClass("slider--item-center")
+                      .prev()
+                      .addClass("slider--item-center"),
+                    h
+                      .removeClass("slider--item-right")
+                      .prev()
+                      .addClass("slider--item-right"))
+                  : 0 === s
+                    ? (l
+                      .removeClass("slider--item-left")
+                      .prev()
+                      .addClass("slider--item-left"),
+                      u
+                        .removeClass("slider--item-center")
+                        .last()
+                        .addClass("slider--item-center"),
+                      h
+                        .removeClass("slider--item-right")
+                        .prev()
+                        .addClass("slider--item-right"))
+                    : (l
+                      .removeClass("slider--item-left")
+                      .prev()
+                      .addClass("slider--item-left"),
+                      c
+                        .removeClass("slider--item-center")
+                        .prev()
+                        .addClass("slider--item-center"),
+                      u
+                        .removeClass("slider--item-right")
+                        .last()
+                        .addClass("slider--item-right"));
           }, 400),
           $(".slider").animate({ opacity: 1 }, 400);
       });
@@ -1406,8 +1406,8 @@
             }, 800)),
             t(1))
           : -50 > i &&
-            o &&
-            ((o = !1),
+          o &&
+          ((o = !1),
             clearTimeout(a),
             (a = setTimeout(function () {
               o = !0;
