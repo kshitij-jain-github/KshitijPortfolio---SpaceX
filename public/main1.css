@@ -277,7 +277,8 @@ body {
 }
 
 body {
-    background-color: #0c0c0c;
+    background: linear-gradient(35deg, rgb(15, 2, 8) 0%, rgb(3, 12, 25) 50%, rgba(0, 10, 3, 1) 100%);
+
     font-size: 14px;
     line-height: 1.6;
     font-family: "Montserrat", sans-serif;
