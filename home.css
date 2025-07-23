@@ -1375,13 +1375,15 @@ pre .code {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-image: url("/public/img/409092207_bf8af5f2-ca2f-41e4-b8fc-8c5ea6bbaad5-removebg-preview.png");
-    background-size: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127)),  url("public/img/vecteezy_mercury-planet-on-transparent-backdrop_48412690.png");
+    background-size: 450px;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: 80px 80px;
+     
 
 
 }
+ 
 
 
 .header .overlay {
@@ -2421,3 +2423,6 @@ pre .code {
 }
 
 /* END CONTACT SECTION */
+
+
+ 
