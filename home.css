@@ -530,7 +530,7 @@ p {
 .service-card {
     position: relative;
     min-height: 230px;
-    border: 1px solid #dee2e6;
+    border: 5px solid #870000;
     overflow: hidden;
     border-radius: 3px;
 }
@@ -541,7 +541,7 @@ p {
 
 .service-card .body img.icon {
     margin-top: 40px;
-    width: 55px;
+    width: 95px;
     margin-bottom: 25px;
     -webkit-transition: all, 0.3s;
     transition: all, 0.3s;
@@ -573,11 +573,11 @@ p {
 .service-card:hover .body img.icon {
     margin-top: 5px;
     width: 45px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .service-card:hover .body .subtitle {
-    bottom: 7px;
+    bottom: 25px;
     opacity: 1;
     visibility: visible;
 }
