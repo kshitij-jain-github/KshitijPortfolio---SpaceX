@@ -1618,6 +1618,12 @@ pre .code {
     width: 30px;
 }
 
+.tab-content>.tab-pane {
+    display: none
+}
+.tab-content>.active {
+    display: block
+}
 
 .typed-cursor {
     font-size: 30px;
