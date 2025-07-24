@@ -530,7 +530,7 @@ p {
 .service-card {
     position: relative;
     min-height: 230px;
-    border: 5px solid #870000;
+    border: 5px solid #000000;
     overflow: hidden;
     border-radius: 3px;
 }
@@ -582,18 +582,18 @@ p {
     visibility: visible;
 }
 
-/*/ portfolio wrapper */
-.portfolio-card {
+/*/ achievement wrapper */
+.achievement-card {
     display: block;
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-card .portfolio-card-img {
+.achievement-card .achievement-card-img {
     width: 100%;
 }
 
-.portfolio-card .portfolio-card-overlay {
+.achievement-card .achievement-card-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -614,13 +614,13 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .portfolio-card .portfolio-card-overlay {
+    .achievement-card .achievement-card-overlay {
         -webkit-transition: none;
         transition: none;
     }
 }
 
-.portfolio-card .portfolio-card-overlay .portfolio-card-caption {
+.achievement-card .achievement-card-overlay .achievement-card-caption {
     display: block;
     position: absolute;
     top: 50%;
@@ -631,7 +631,7 @@ p {
     width: 100%;
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
+.achievement-card:hover .achievement-card-overlay {
     opacity: 1;
     visibility: visible;
     width: 100%;
@@ -640,7 +640,7 @@ p {
 }
 
 @media (max-width: 767.98px) {
-    .portfolio-card {
+    .achievement-card {
         margin-bottom: 30px;
     }
 
@@ -650,7 +650,7 @@ p {
 }
 
 /* testmonial card */
-.testimonial-card {
+.qoute-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -662,13 +662,13 @@ p {
     margin-bottom: 30px;
 }
 
-.testimonial-card-img-holder {
+.qoute-card-img-holder {
     min-width: 45px;
     max-width: 45px;
     z-index: 999;
 }
 
-.testimonial-card-img {
+.qoute-card-img {
     background: #fff;
     padding: 4px;
     width: 90px;
@@ -676,7 +676,7 @@ p {
     border-radius: 50%;
 }
 
-.testimonial-card-body {
+.qoute-card-body {
     text-align: left;
     border: 1px solid #dee2e6;
     background: #fff;
@@ -684,7 +684,7 @@ p {
     border-radius: 0;
 }
 
-.testimonial-card-title {
+.qoute-card-title {
     margin-top: 20px;
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
 }
