@@ -1375,7 +1375,7 @@ pre .code {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.127)),  url("public/img/vecteezy_mercury-planet-on-transparent-backdrop_48412690.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127)),  url('img/vecteezy_mercury-planet-on-transparent-backdrop_48412690.png');
     background-size: 450px;
     background-repeat: no-repeat;
     background-position: 80px 80px;
