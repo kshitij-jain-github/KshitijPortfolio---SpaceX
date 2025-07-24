@@ -1,637 +1,1169 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Kshitij Jain</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitij Jain</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/public/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="public/main.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="icon" type="image/x-icon" href="public/img/circle-final.png">
+
+
 </head>
 
-<body>
-  <!-- notification for small viewports and landscape oriented smartphones -->
-  <div class="device-notification">
-    <a class="device-notification--logo" href="#0">
-      <img src="/public/img/final.jpg" alt="Global" width="30px">
-      <p>Global</p>
-    </a>
-    <p class="device-notification--message">Global has so mch to offer that we must request you orient your device to
-      portrait or find a larger screen. You won't be disappointed.</p>
-  </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-  <div class="perspective effect-rotate-left ">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <img src="public/img/final.jpg" alt="Kshitij jain" width="50px" style="border-radius:100%">
+            <a class="logo p-2" href="#">Kshitij Jain</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+
+
+                <li class="item">
+                    <a class="link" href="#services">Services</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+
+                <li class="item">
+                    <a class="link" href="#experience">Education & Experience</a>
+                </li>
+
+
+                <li class="item">
+                    <a class="link" href="#projects">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#achievements">Achievements</a>
+                </li>
+
+                <li class="item ml-md-3">
+                    <a href="#contact" class="btn btn-primary">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
 
     <canvas id="canvas"></canvas>
 
-    <div class="container-fluid ">
-      <div class="outer-nav--return"></div>
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="flying-wrapper">
+            <div class="abduction-light"></div>
+            <div class="flying-saucer">
+                <div class="lights"></div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
 
 
-
-      <div id="viewport" class="l-viewport">
-
-        <div class="l-wrapper">
+        <img class="header-img"
+            src="public/img/vecteezy_the-final-frontier-3d-render-of-astronaut-on-white_22483628.png" alt="">
 
 
+        <div class="header-content container  ">
+            <h1 class="header-title ">
+                <span class="up">HI!</span>
+                <span class="down">I am Kshitij Jain</span>
+            </h1>
+            <h2 class="typed-text-output d-inline"></h2>
+            <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps
+                Developer</div>
 
-          <header class="header">
-            <a class="header--logo" href="#0">
-              <img src="public/img/final.jpg" alt="Kshitij jain" width="50px" style="border-radius:100%">
-              <p>Kshitij Jain</p>
+        </div>
 
-            </a>
-            <button class='glowing-btn '><span class='glowing-txt'>H<span class='faulty-letter'>i</span>re
-                Me</span></button>
-            <div class="header--nav-toggle">
-              <span></span>
+    </header><!-- end of page header -->
+
+
+    <!-- About Start -->
+    <section class="section" id="about">
+        <div class="container-xxl py-6" id="about">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="years flex-shrink-0 text-center me-4">
+                                <h1 class="display-1 mb-0">03</h1>
+                                <h5 class="mb-0">Years</h5>
+                            </div>
+                            <h3 class="lh-base mb-0">of working experience as a Software Developer</h3>
+                        </div>
+                        <p class="mb-4"></p>
+                        <strong>Hi, I'm Kshitij Jain — a developer who believes in building things that not only
+                            work but also make life easier.
+
+                        </strong>
+
+                        </p>
+                        <p class="mb-4">
+                            <strong>I specialize in creating real-world web applications using .NET Core, SQL Server,
+                                and modern UI tools. My journey began with a simple curiosity: “How does
+                                the web really work?” That question turned into a passion for problem-solving, backend
+                                logic, and clean, user-focused design.
+                            </strong>
+
+                        </p>
+
+                        <p> <strong>I’m pursuing my M.Tech in IT from USICT, where I’m also diving deep into AI,
+                                machine learning, and data science.
+
+                                But tech is just one side of me. I love playing chess ♟️, strumming my guitar 🎸, and
+                                escaping to the mountains 🏔️ — where I feel most alive and inspired.
+
+                            </strong></p>
+                        <h3>💡 What Drives Me</h3>
+                        <ul class="about-list">
+                            <li>🔧 <strong>Building</strong> clean, meaningful software</li>
+                            <li>🧠 <strong>Solving</strong> real-world problems with tech</li>
+                            <li>💬 <strong>Designing</strong> user experiences that just make sense</li>
+                            <li>📚 <strong>Always learning</strong> — especially AI and data science</li>
+                        </ul>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Download Resume</a>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <img class="img-fluid rounded" src="public/img/final.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid rounded"
+                                    src="public/img/vecteezy_isolated-3d-astronaut_47307967.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+
+                            <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">Real-World Experience</h2>
+                        </div>
+                        <h5 class="border-end pe-3 me-3 mb-0">Interships Experience</h5>
+                        <ul>
+                            <li>✅ Worked with <strong>NIC</strong>, <strong>Brainworm Technologies</strong>,
+                                <strong>GGSIPU ACM</strong>, and <strong>Chegg India</strong>
+                            </li>
+                            <li>🔐 Built systems with <strong>secure logins</strong>, <strong>role-based
+                                    access</strong>, and <strong>form validation</strong></li>
+                            <li>🧠 Contributed to real-time platforms with strong <strong>backend logic</strong> and
+                                <strong>user-focused features</strong>
+                            </li>
+                        </ul>
+
+                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+
+                        <ul>
+                            <li>🛒 <strong>Full-Stack Apps:</strong> Built platforms like <strong>GoShopper</strong>
+                                (e-commerce with payments & dashboards), <strong>Raktdaan</strong> (blood donation
+                                system), and <strong>Think It Fast</strong> (mock tests with proctoring)</li>
+
+                            <li>📊 <strong>AI & Data Projects:</strong> Analyzed real-world datasets like <strong>App
+                                    Store trends</strong> using Python libraries — <strong>Pandas, Seaborn,
+                                    Matplotlib</strong></li>
+
+                            <li>💸 <strong>Smart Tools:</strong> Created daily/monthly <strong>expense tracker</strong>
+                                with interactive graphs using <strong>Highcharts</strong> and clean UI design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About End -->
+
+
+    <!-- service section -->
+    <section class="section" id="services">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKlXNaccSd5e4QjFpP41wrVlbvR6aW-sAYw&s"
+                                class="icon">
+                            <h6 class="title"> Full-Stack Web Development</h6>
+                            <p class="subtitle">I can build clean, secure, and fully functional websites
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7EkD8CEE5bwz7pHjYudjy4gmELqDUDP23gw&s"
+                                class="icon">
+                            <h6 class="title">Data Analysis</h6>
+                            <p class="subtitle">I use Python, Pandas, Seaborn and Matplotlib to turn raw data into smart
+                                decisions and insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://i0.wp.com/webdevpuneet.com/wp-content/uploads/2020/05/responsive-web-design-icon-3.png?fit=837%2C679&ssl=1"
+                                class="icon">
+                            <h6 class="title">Responsive UI Design</h6>
+                            <p class="subtitle">Your site will look great on all screen sizes. I use Bootstrap and CSS
+                                to make UIs simple and beautiful.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://static.vecteezy.com/system/resources/previews/025/796/485/non_2x/rocket-icon-template-illustration-vector.jpg"
+                                class="icon">
+                            <h6 class="title">Open to Projects</h6>
+                            <p class="subtitle">Have an idea? Let’s build it together. I’m open to freelance projects,
+                                internships, or group collabs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+
+    <!-- skills and experience section-->
+    <section class="section">
+
+        <div class="container-xxl py-6 pb-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" id="skills" data-wow-delay="0.1s">
+                        <h1 class="display-5 mb-4">Skills & Experience</h1>
+                        <p class="mb-4 ">🧰 Stacked with the right tools to build, sStacked with the right tools to
+                            build, sStacked with the right tools to build, scale, and solve.</p>
+
+                        <h3 class="mb-4 text-center">My Skills</h3>
+                        <div class="row  justify-content-center g-3">
+
+                            <!-- Languages -->
+                            <div class="col-auto" title="Python">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        width="24" height="24" class="me-2" alt="Python" />Python
+                                </span>
+                            </div>
+                            <div class="col-auto" title="C++">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                                        width="24" height="24" class="me-2" alt="C++" />C++
+                                </span>
+                            </div>
+                            <div class="col-auto" title="C#">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                        width="24" height="24" class="me-2" alt="C#" />C#
+                                </span>
+                            </div>
+
+                            <!-- Frameworks & Libraries -->
+                            <div class="col-auto" title=".NET Core">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg"
+                                        width="24" height="24" class="me-2" alt=".NET Core" />.NET Core
+                                </span>
+                            </div>
+                            <div class="col-auto" title="MVC">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://static.thenounproject.com/png/778219-200.png" width="24"
+                                        height="24" class="me-2" alt="MVC" />MVC
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Entity Framework">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg"
+                                        width="24" height="24" class="me-2" alt="Entity Framework" />Entity
+                                    Framework
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Razor Pages">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg"
+                                        width="24" height="24" class="me-2" alt="Razor Pages" />Razor Pages
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Pandas">
+                                <span class="badge  border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"
+                                        width="124" height="24" class="me-2" alt="Pandas" />
+                                </span>
+                            </div>
+                            <div class="col-auto" title="NumPy">
+                                <span class="badge   border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg"
+                                        width="124" height="24" class="me-2" alt="NumPy" />
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Seaborn">
+                                <span class="badge border d-flex align-items-center p-2">
+                                    <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" width="124"
+                                        height="24" class="me-2" alt="Seaborn" />
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Matplotlib">
+                                <span class="badge  border d-flex align-items-center p-2">
+                                    <img src="https://matplotlib.org/_static/images/logo2.svg" width="124" height="24"
+                                        class="me-2" alt="Matplotlib" />
+                                </span>
+                            </div>
+
+                            <!-- Frontend & UI -->
+                            <div class="col-auto" title="HTML">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                        width="24" height="24" class="me-2" alt="HTML" />HTML
+                                </span>
+                            </div>
+                            <div class="col-auto" title="CSS">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                        width="24" height="24" class="me-2" alt="CSS" />CSS
+                                </span>
+                            </div>
+                            <div class="col-auto" title="JavaScript">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                        width="24" height="24" class="me-2" alt="JavaScript" />JavaScript
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Bootstrap">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                        width="24" height="24" class="me-2" alt="Bootstrap" />Bootstrap
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Swiper.js">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://miro.medium.com/v2/resize:fit:1128/1*FbvMJKVVYzfHGG3b0NaJGg.png"
+                                        width="54" height="24" class="me-2" alt="Swiper.js" />Swiper.js
+                                </span>
+                            </div>
+                            <div class="col-auto" title="DataTables">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://png.pngtree.com/png-vector/20230318/ourmid/pngtree-data-table-line-icon-vector-png-image_6656297.png"
+                                        width="24" height="24" class="me-2" alt="DataTables" />DataTables
+                                </span>
+                            </div>
+
+                            <!-- Databases -->
+                            <div class="col-auto" title="SQL Server">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg"
+                                        width="64" height="24" class="me-2" alt="SQL Server" />
+                                </span>
+                            </div>
+
+                            <!-- Tools & IDEs -->
+                            <div class="col-auto" title="GitHub">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                        width="24" height="24" class="me-2" alt="GitHub" />GitHub
+                                </span>
+                            </div>
+                            <div class="col-auto" title="SSMS">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://miro.medium.com/v2/1*-hkzF9m5828c-UIaSQNUug.jpeg" width="24"
+                                        height="24" class="me-2" alt="SSMS" />SSMS
+                                </span>
+                            </div>
+                            <div class="col-auto" title="VS Code">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                        width="24" height="24" class="me-2" alt="VS Code" />VS Code
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Visual Studio 2022">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5pkHboL-NFHg9F--yIQPCzv4g8gmf8rpong&s"
+                                        width="44" height="24" class="me-2" alt="Visual Studio" />Visual Studio
+                                    2022
+                                </span>
+                            </div>
+                            <div class="col-auto" title="Jupyter Notebook">
+                                <span class="badge text-dark border d-flex align-items-center p-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg"
+                                        width="24" height="24" class="me-2" alt="Jupyter" />Jupyter Notebook
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" id="experience" data-wow-delay="0.5s">
+                        <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                            <li class="nav-item w-50">
+                                <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
+                                    data-bs-target="#tab-1">Experience</button>
+                            </li>
+                            <li class="nav-item w-50">
+                                <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
+                                    data-bs-target="#tab-2">Education</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+
+                            <!-- Experience Tab -->
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row gy-5 gx-4">
+                                    <div class="col-sm-6">
+                                        <h5>Subject Matter Expert (Freelance) <a
+                                                href="https://drive.google.com/file/d/1OiuT8ffT46hLmsgeZaD5cM_jPvmoCtC_/view?usp=drive_link"
+                                                target="_blank" title="View Certificate"><i
+                                                    class="fa fa-link text-primary"></i></a></h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Apr 2022 - Jul 2024</p>
+                                        <h6 class="mb-1">Chegg India · Remote</h6>
+                                        <p>Answered and reviewed complex technical queries in C++, Python, and SQL.
+                                            Helped thousands of students with real-time code debugging and concept
+                                            clarification.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Java Software Developer Intern <a
+                                                href="https://drive.google.com/file/d/1OiuT8ffT46hLmsgeZaD5cM_jPvmoCtC_/view?usp=drive_link"
+                                                target="_blank" title="View Certificate"><i
+                                                    class="fa fa-link text-primary"></i></a></h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Aug 2023 - Sep 2023</p>
+                                        <h6 class="mb-1">National Informatics Centre · On-site</h6>
+                                        <p>Developed secure login systems and integrated form validation for government
+                                            portals. Gained hands-on experience with Java backend systems and RESTful
+                                            APIs.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>.Net Core (MVC) Developer Intern <a
+                                                href="https://drive.google.com/file/d/1OiuT8ffT46hLmsgeZaD5cM_jPvmoCtC_/view?usp=drive_link"
+                                                target="_blank" title="View Certificate"><i
+                                                    class="fa fa-link text-primary"></i></a></h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Jun 2023 - Aug 2023</p>
+                                        <h6 class="mb-1">GGSIPU ACM Student Chapter · On-site</h6>
+                                        <p>Built role-based dashboards using ASP.NET Core MVC. Worked on backend CRUD
+                                            operations and database interactions with SQL Server and Entity Framework.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>ASP.NET Core Developer Intern <a
+                                                href="https://drive.google.com/file/d/1OiuT8ffT46hLmsgeZaD5cM_jPvmoCtC_/view?usp=drive_link"
+                                                target="_blank" title="View Certificate"><i
+                                                    class="fa fa-link text-primary"></i></a></h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Jul 2022 - Sep 2022</p>
+                                        <h6 class="mb-1">Brainworm Technologies · Hybrid</h6>
+                                        <p>Created enterprise-level modules in .NET Core with Razor Pages. Focused on
+                                            authentication, user management, and responsive front-end design with
+                                            Bootstrap.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Education Tab -->
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row gy-5 gx-4">
+                                    <div class="col-sm-6">
+                                        <h5>M.Tech, Information Technology</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Aug 2024 - Jul 2026</p>
+                                        <h6 class="mb-0">USICT, GGSIPU</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>B.Tech, Information Technology</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Dec 2020 - Jul 2024</p>
+                                        <h6 class="mb-0">USICT, GGSIPU</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>12th CBSE Board</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2018 - 2020</p>
+                                        <h6 class="mb-0">SGMS</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>10th CBSE Board</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2016 - 2018</p>
+                                        <h6 class="mb-0">SRCPS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of skills and experience section -->
+
+
+    <!-- HIRE ME section -->
+    <section class="section-sm bg-dark">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of HIRE ME section -->
+
+
+    <!-- PROJECT section -->
+    <!-- PROJECT section -->
+    <section class="section" id="projects">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+
+            <!-- Project 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <!-- Image Carousel -->
+                    <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 185849.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 185935.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 2">
+                            </div>
+
+                            <div class="carousel-item active">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190013.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190315.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190544.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190619.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190812.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 1">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190909.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Ecommerce/Screenshot 2025-07-23 190929.png"
+                                    class="d-block w-100" alt="GoShopper Screenshot 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 text-start ">
+                    <h4 class="text-primary mt-4 mb-3"><i class="fa fa-shopping-cart me-2"></i>GoShopper</h4>
+                    <p class="mb-2"><strong>Tech Used:</strong> ASP.NET Core, SQL Server, Razor Pages, Bootstrap</p>
+                    <p class="mb-2"><strong>Description:</strong> A full-fledged e-commerce platform with role-based
+                        dashboards, secure payment integration, and custom admin panels for product/order/user
+                        management.</p>
+                </div>
             </div>
 
-          </header>
+            <!-- Project 2 -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <!-- Image Carousel -->
+                    <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170307.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170417.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170451.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170518.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170530.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170605.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170619.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170735.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170639.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170822.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/raktdaan/Screenshot 2025-01-14 170839.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
 
-
-
-          <nav class="l-side-nav">
-            <ul class="side-nav">
-              <li class="is-active"><span>About Me</span></li>
-              <li><span>Education</span></li>
-              <li><span>Experence</span></li>
-              <li><span>Projects</span></li>
-              <li><span>Skills</span></li>
-              <li><span>Achievements</span></li>
-              <li><span>Contact</span></li>
-            </ul>
-          </nav>
-
-
-
-
-          <ul class="l-main-content main-content">
-
-            <li class="l-section section section--is-active">
-
-              <div class="flying-wrapper">
-                <div class="abduction-light"></div>
-                <div class="flying-saucer">
-                  <div class="lights"></div>
-                </div>
-              </div>
-
-              <div class="content">
-
-                <div class="row">
-
-                  <div class="col-lg-8">
-
-                    <ul class="content1">
-
-
-                      <li id="first-line" class="dollar">Hello&#128075; I'm <strong class="glowing-txt"
-                          style="position: absolute; margin-left: 6px;"> Kshitij Jain.</strong><br></li>
-                      <!-- <li class="dollar">.NET Developer ,Web Developer & Video Editor.</li> -->
-                      <li class="dollar">I am currently pursuing MTech in IT at University School of Information,
-                        Communication & Technology (USICT), specializing in Data Science and Artificial Intelligence.
-                        <br>
-                        With a strong foundation in .NET Core, Ado.Net, MVC, and Entity Framework, I continuously seek
-                        to expand my skill set in areas like Machine Learning, Deep Learning, and AI Ethics. I am always
-                        eager to learn, collaborate, and share my knowledge while staying at the forefront of
-                        technology.
-
-                      </li>
-                    </ul>
-
-                  </div>
-
-                  <div class="col-lg-4">
-                    <img src="public/img/final.jpg" class="profile-img box1" alt="">
-
-                  </div>
-                </div>
-                <a class="glowing-btn home-btn" href="skills.html">Skills</a>
-                <a class="glowing-btn home-btn">Resume</a>
-
-              </div>
-            </li>
-            <li class="l-section section">
-
-              <div class="planet"></div>
-              <div class=" moon"> </div>
-
-              <div class="content">
-
-                <div class="main-timeline">
-                  <!-- start EDUCATION section-->
-                  <div class="timeline">
-                    <div class="icon"></div>
-                    <div class="date-content">
-                      <div class="date-outer">
-                        <span class="date">
-                          <span class="month">PG</span>
-                          <span class="year">2024 - 2026</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="timeline-content">
-                      <h5 class="title">M.Tech - IT</h5>
-                      <p class="description">
-                        USICT, GGSIPU | New
-                        Delhi, Inida
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="timeline">
-                    <div class="icon"></div>
-                    <div class="date-content">
-                      <div class="date-outer">
-                        <span class="date">
-                          <span class="month">UG</span>
-                          <span class="year">2020 - 2024</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="timeline-content">
-                      <h5 class="title">B.Tech - IT</h5>
-                      <p class="description">
-                        USICT, GGSIPU | New
-                        Delhi, Inida
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="timeline">
-                    <div class="icon"></div>
-                    <div class="date-content">
-                      <div class="date-outer">
-                        <span class="date">
-                          <span class="month">SSE</span>
-                          <span class="year"> 2018 - 2020</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="timeline-content">
-                      <h5 class="title">12TH CBSE BOARD</h5>
-                      <p class="description">Sant Gyaneshwar Model School | New Delhi, India
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="timeline">
-                    <div class="icon"></div>
-                    <div class="date-content">
-                      <div class="date-outer">
-                        <span class="date">
-                          <span class="month">SE</span>
-                          <span class="year">2016 - 2018</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="timeline-content">
-                      <h5 class="title">10TH CBSE BOARD </h5>
-                      <p class="description">S.R Capital Public School | New Delhi, India
-                      </p>
-                    </div>
-                  </div>
-                  <!-- end EDUCATION section-->
-
-
-                </div>
-
-              </div>
-
-            </li>
-            <li class="l-section section">
-              <div class="content ">
-                <!-- <h1>EXPERIENCE</h1> -->
-                <div class="moon"> </div>
-                <div class="sun"></div>
-                <div id="flex-container" class="testimonials">
-                  <div id="left-zone">
-
-                    <ul class="list">
-                      <li class="item">
-                        <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
-                        <label class="label_testimonial-1" for="radio_testimonial-1">Java Software Developer
-                        </label>
-                        <div class="content-test content_testimonial-1">
-
-                          <h1> National Informatics Centre, Govt. Of India </h1>
-                          <p class="testimonialFrom">Java Software Developer Intern</p>
-
-                          <p>
-                            I learned to connect Java with MySQL and MongoDB using JDBC drivers and Maven dependencies.
-                            Also I transferred data from Excgufuyfl to MongoDB using Java and Maven. Additionally, I
-                            created
-                            a registration/login page with Java Servlets, implementing sessions and authentication for
-                            users in MongoDB. Frontend was developed with HTML and CSS.</p>
-                          <p class="testimonialState">Aug 2023 - Sept 2023</p>
                         </div>
-                      </li>
-                      <li class="item">
-                        <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-                        <label class="label_testimonial-2" for="radio_testimonial-2">.NET core Developer</label>
-                        <div class="content-test content_testimonial-2">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <h4 class="text-primary mb-3  mt-4 "><i class="fa fa-heartbeat me-2"></i>Raktdaan</h4>
+                    <p class="mb-2"><strong>Tech Used:</strong> ASP.NET Core, SQL Server, Bootstrap, DataTables</p>
+                    <p class="mb-2"><strong>Description:</strong> A secure blood donation platform featuring
+                        registration, location-wise donor mapping, and role-based access for admins and hospitals.</p>
+                </div>
+            </div>
 
-                          <h1>Brainworm Technologies Ptv.Ltd</h1>
-                          <p class="testimonialFrom">.NET core Developer</p>
-                          <p>
-                            - My responsibilities included developing a backend server for authentication and user role
-                            management.
-                            - I also integrated Google and Facebook external login providers using the identity
-                            framework. Additionally, I created custom web pages using HTML, CSS, and Bootstrap.</p>
-                          <p class="testimonialState"> Jul 2022 - Sept 2022</p>
+            <!-- Project 3 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <!-- Image Carousel -->
+                    <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 180618.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 180700.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 2">
+                            </div>
+                            <div class="carousel-item  ">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 180745.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 180808.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 2">
+                            </div>
+                            <div class="carousel-item  ">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 180843.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 180905.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 2">
+                            </div>
 
-                          <br>
+                            <div class="carousel-item  ">
+                                <img src="public/project image/ThinkITFast/Screenshot 2025-01-14 181109.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 1">
+                            </div>
+
                         </div>
-                      </li>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <h4 class="text-primary mb-3  mt-4 "><i class="fa fa-laptop-code me-2"></i>Think It Fast</h4>
+                    <p class="mb-2"><strong>Tech Used:</strong> ASP.NET Core, JavaScript, Razor Pages, Proctoring
+                        Scripts</p>
+                    <p class="mb-2"><strong>Description:</strong> A secure mock test platform with live proctoring
+                        features, real-time cheating detection, and automated scoring with data reports.</p>
+                </div>
+            </div>
 
-                      <li class="item">
-                        <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
-                        <label class="label_testimonial-4" for="radio_testimonial-4">Subject Matter Expert </label>
-                        <div class="content-test content_testimonial-4">
-                          <span class="picto"></span>
-                          <h1>Chegg India</h1>
+            <!-- Project 4 -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <!-- Image Carousel -->
+                    <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="public/project image/Analysing App Store Data/Screenshot 2025-07-24 at 11.08.03 AM.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Analysing App Store Data/Screenshot 2025-07-24 at 11.08.38 AM.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Analysing App Store Data/Screenshot 2025-07-24 at 11.08.55 AM.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Analysing App Store Data/Screenshot 2025-07-24 at 11.10.14 AM.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Analysing App Store Data/Screenshot 2025-07-24 at 11.10.30 AM.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Analysing App Store Data/Screenshot 2025-07-24 at 11.10.59 AM.png"
+                                    class="d-block w-100" alt="Raktdaan Screenshot 2">
+                            </div>
 
-                          <p class="testimonialFrom">Subject Matter Expert
-
-                          </p>
-                          <p>As a freelance Subject Matter Expert in Computer Science for the Chegg India Portal, I
-                            have been assigned the responsibility of resolving Programming Assignments across a range of
-                            Computer Science disciplines.</p>
-                          <p class="testimonialState">April 2022 - Present</p>
-
-                          <br>
                         </div>
-                      </li>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <h4 class="text-primary mb-3  mt-4 "><i class="fa fa-heartbeat me-2"></i>Analayzing App Store Data
+                    </h4>
+                    <p class="mb-2"><strong>Tech Used:</strong> ASP.NET Core, SQL Server, Bootstrap, DataTables</p>
+                    <p class="mb-2"><strong>Description:</strong> A secure blood donation platform featuring
+                        registration, location-wise donor mapping, and role-based access for admins and hospitals.</p>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <!-- Image Carousel -->
+                    <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="public/project image/Expense manger/Screenshot 2025-07-23 194903.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Expense manger/Screenshot 2025-07-23 195000.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 2">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/project image/Expense manger/Screenshot 2025-07-23 194945.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/project image/Expense manger/Screenshot 2025-07-23 195000.png"
+                                    class="d-block w-100" alt="Think It Fast Screenshot 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <h4 class="text-primary mb-3  mt-4 "><i class="fa fa-laptop-code me-2"></i>Expense Manager</h4>
+                    <p class="mb-2"><strong>Tech Used:</strong> ASP.NET Core, JavaScript, Razor Pages, Proctoring
+                        Scripts</p>
+                    <p class="mb-2"><strong>Description:</strong> A secure mock test platform with live proctoring
+                        features, real-time cheating detection, and automated scoring with data reports.</p>
+                </div>
+            </div>
+        </div>
 
-                    </ul>
-                  </div>
-                  <div id="right-zone"></div>
+    </section>
+    <!-- end of PROJECT section -->
+
+
+
+
+    <!-- ACHIEVEMENTS section -->
+    <section class="section" id="achievements">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">ACHIEVEMENTS</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img src="public/certificates/NIC INTERN.png" class="achievement-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Software Developer Intern </h5>
+                                    <p class="font-weight-normal">National Informatics Center, Govt. Of India</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/Intership.jpg"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>.Net Developer Intern</h5>
+                                    <p class="font-weight-normal">Brainworm Technologies Pvt.Ltd</p>
+                            </span>
+                        </span>
+                    </a>
                 </div>
 
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="content">
-                <h1>PROJECTS</h1>
-                <div class="blog-slider">
-                  <div class="blog-slider__wrp swiper-wrapper">
-                    <div class="blog-slider__item swiper-slide">
-                      <div class="blog-slider__img">
 
-                        <img
-                          src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
-                          alt="">
-                      </div>
-                      <div class="blog-slider__content">
-                        <span class="blog-slider__code">26 December 2019</span>
-                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                          Recusandae voluptate repellendus magni illo ea animi? </div>
-                        <a href="#" class="blog-slider__button">READ MORE</a>
-                      </div>
-                    </div>
-                    <div class="blog-slider__item swiper-slide">
-                      <div class="blog-slider__img">
-                        <img
-                          src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
-                          alt="">
-                      </div>
-                      <div class="blog-slider__content">
-                        <span class="blog-slider__code">26 December 2019</span>
-                        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                          Recusandae voluptate repellendus magni illo ea animi?</div>
-                        <a href="#" class="blog-slider__button">READ MORE</a>
-                      </div>
-                    </div>
-
-                    <div class="blog-slider__item swiper-slide">
-                      <div class="blog-slider__img">
-                        <img
-                          src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
-                          alt="">
-                      </div>
-                      <div class="blog-slider__content">
-                        <span class="blog-slider__code">26 December 2019</span>
-                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                          Recusandae voluptate repellendus magni illo ea animi?</div>
-                        <a href="#" class="blog-slider__button">READ MORE</a>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="blog-slider__pagination"></div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/Chegg QnA expert Certificate.jpg"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Computer Science - Subject Mater Expert</h5>
+                                    <p class="font-weight-normal">Chegg India</p>
+                            </span>
+                        </span>
+                    </a>
                 </div>
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="content">
-                <!-- <h1>skills</h1> -->
-                <div class="skill-container">
-
-
-                  <div class="skill-type">
-                    <h2 class="type-heading">Programming Languages</h2>
-                    <div class="badge "
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px   rgb(33, 144, 235);">
-                      <p>C++</p>
-                      <span></span>
-                    </div>
-
-                    <div class="badge"
-                      style=" color: rgb(242, 144, 64); box-shadow:  0px 0px 5px 3px  rgb(48, 92, 163);">
-                      <p>JAVA</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px  rgb(131, 29, 194);">
-                      <p>C#</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(242, 209, 64); box-shadow:  0px 0px 5px 3px  rgb(20, 78, 187);">
-                      <p>PYTHON</p>
-                      <span></span>
-                    </div>
-
-                  </div>
-                  <div class="skill-type">
-                    <h2 class="type-heading">Backend Framework</h2>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px  rgb(114, 11, 146);">
-                      <p>.NET CORE</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px   rgb(102, 156, 233);">
-                      <p> ASP.NET CORE (MVC)</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px  rgb(146, 11, 119);">
-                      <p> ADO.NET</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px rgb(233, 161, 132);">
-                      <p> ENTITY FRAMEWORK</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style="color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px  rgb(176, 146, 242);">
-                      <p> IDENTITY FRAMEWORK</p>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="skill-type">
-                    <h2 class="type-heading">Frontend</h2>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow: 0px 0px 5px 3px  rgb(187, 101, 20);">
-                      <p> HTML</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow: 0px 0px 5px 3px  rgb(64, 141, 242);">
-                      <p> CSS</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px  rgb(242, 209, 64);">
-                      <p> JAVASCRIPT</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px  rgb(196, 20, 231);">
-                      <p> BOOTSTRAP</p>
-                      <span></span>
-                    </div>
-                  </div>
-
-                  <div class="skill-type">
-                    <h2 class="type-heading">Database</h2>
-                    <div class="badge"
-                      style=" color: rgb(242, 144, 64); box-shadow:  0px 0px 5px 3px  rgb(48, 92, 163);">
-                      <p> MYSQL</p>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="skill-type">
-                    <h2 class="type-heading">Tools & IDEs</h2>
-                    <div class="badge"
-                      style=" color: rgb(242, 144, 64); box-shadow:  0px 0px 5px 3px  rgb(48, 92, 163);">
-                      <p> SSMS</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow: 0px 0px 5px 3px  rgb(137, 8, 141);">
-                      <p> VISUAL STUDIO 2022</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow:  0px 0px 5px 3px   rgb(29, 97, 215);">
-                      <p> VS CODE</p>
-                      <span></span>
-                    </div>
-                    <div class="badge"
-                      style=" color: rgb(255, 255, 255); box-shadow: 0px 0px 5px 3px  rgb(67, 67, 67);">
-                      <p> GITHUB</p>
-                      <span></span>
-                    </div>
-                  </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/ACM INTERN.png"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>.Net Developer Intern</h5>
+                                    <p class="font-weight-normal">ACM - Uthkrish Summer Internship</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img src="public/certificates/Nasa Challenege certificate.png" class="achievement-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Galactic Problem Solver</h5>
+                                    <p class="font-weight-normal">NASA International Space Apps Challenege</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/Tech Certification.jpg"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>India's Largest 4.0 Student Tech Community</h5>
+                                    <p class="font-weight-normal">CCBP 4.0 TECH Community</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/iNeuro Certificate kshitijjain.jpg"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Tech-A-Thon 3.0</h5>
+                                    <p class="font-weight-normal">iNeuron at Gautum Buddha University</p>
+                            </span>
+                        </span>
+                    </a>
                 </div>
 
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="content">
-                <h1>ACHIEVEMENTS</h1>
-                <div class="swiper1">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="public/certificates/c++_badge_hackerrank.jpg" style="width:350px; height:250px"
-                        alt="" />
-                      <div class="overlay">
-                        <span>Issued by Hackerrank </span>
-                        <h2>4 star C++ Badge </h2>
-                      </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/AI FUNDAMENTAL .png"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Artificial Intelligence Fundamentals</h5>
+                                    <p class="font-weight-normal">IBM - SkillsBuild</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+            <!-- row -->
+            <div class="row">
+
+
+
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img src="public/certificates/IBM Cloud Certificate.jpeg" class="achievement-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Journey to the Cloud</h5>
+                                    <p class="font-weight-normal">IBM - SkillsBuild</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img"
+                            src="public/certificates/Java(Basic) Certificate Hackerrank.png"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Java(Basic)</h5>
+                                    <p class="font-weight-normal">Hackerrank</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/PYTHON UDEMY.png"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>Python </h5>
+                                    <p class="font-weight-normal">Udemy - Horizon Tech</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="achievement-card">
+                        <img class="achievement-card-img" src="public/certificates/SQL BEGINNER.png"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="achievement-card-overlay">
+                            <span class="achievement-card-caption">
+                                <h4>SQL</h5>
+                                    <p class="font-weight-normal">Udemy - Bluelime learning solution</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+
+        </div><!-- end of container -->
+    </section> <!-- end of ACHIEVEMENTS section -->
+
+    <!-- quote section renamed as Motivation -->
+    <section class="section" id="quote">
+        <div class="container text-center">
+            <p class="section-subtitle">What Fuels Me 💙</p>
+            <h6 class="section-title mb-6">My Motivation</h6>
+
+            <!-- row -->
+            <div class="row">
+                <!-- Motivation Block 1 -->
+                <div class="col-md-6">
+                    <div class="qoute-card">
+                        <div class="qoute-card-img-holder">
+                            <img src="public/img/IMG_8473.jpeg" class="qoute-card-img"
+                                alt="Mountains and mindset image">
+                        </div>
+                        <div class="qoute-card-body">
+                            <h5 class="qoute-card-title">⛰️ Mountains, Music & Mindset</h5>
+                            <p class="qoute-card-subtitle">
+                                "When I’m not coding, I’m playing the guitar or hiking into the unknown. These aren’t
+                                just hobbies — they’re how I recharge, reflect, and refocus. Life, like code, is a
+                                beautiful journey."
+                            </p>
+                            <p class="text-muted small">🎸 Hobbies: Guitar, Chess, Traveling to Mountains</p>
+                        </div>
                     </div>
-
-                    <div class="swiper-slide">
-                      <img class="img-position" src="public/certificates/certificates1024_1.jpg"
-                        style="width:600px; height:400px" alt="" />
-                      <div class="overlay">
-                        <span>Issued - </span>
-                        <h2>Breaking Bad</h2>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="public/certificates/Tech Certification.jpg" style="width:600px; height:400px" alt="" />
-                      <div class="overlay">
-                        <span>Issued by CCBP 4.0 </span>
-                        <h2> India's Largest Tech Student Community</h2>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="public/certificates/certificates1024_4.jpg" style="width:600px; height:400px" alt="" />
-                      <div class="overlay">
-                        <span>Issued - </span>
-                        <h2>Wednesday</h2>
-                      </div>
-                    </div>
-
-
-
-                    <div class="swiper-slide">
-                      <img src="public/certificates/IBM Cloud Certificate.jpeg" style="width:600px; height:400px"
-                        alt="" />
-                      <div class="overlay">
-                        <span>Issued by IBM </span>
-                        <h2>Journey to Cloud : Envisioning Your Solution</h2>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <img src="public/certificates/iNeuro Certificate kshitijjain.jpg"
-                        style="width:600px; height:400px" alt="" />
-                      <div class="overlay">
-                        <span>Issued - </span>
-                        <h2>iNeuron Tech-A-Thon</h2>
-                      </div>
-                    </div>
-
-
-
-                    <div class="swiper-slide">
-                      <img src="public/certificates/Java(Basic) Certificate Hackerrank.png"
-                        style="width:600px; height:400px" alt="" />
-                      <div class="overlay">
-                        <span>Issued </span>
-                        <h2> Java(Basics) Certificate - HackerRank</h2>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <img src="public/certificates/Nasa Challenege certificate.png" style="width:600px; height:400px"
-                        alt="" />
-                      <div class="overlay">
-                        <span>Issued - </span>
-                        <h2>Galactic Problem Solver - NASA International Space Challenege</h2>
-                      </div>
-                    </div>
-
-                  </div>
                 </div>
 
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="content contact">
-                <h1>Get In Touch</h1>
-                <div class="row text-center">
-                  <div class="col-lg-4  " data-aos="fade-up" data-aos-delay="400">
+                <!-- Motivation Block 2 -->
+                <div class="col-md-6">
+                    <div class="qoute-card">
+                        <div class="qoute-card-img-holder">
+                            <img src="public/img/IMG_8041.jpeg" class="qoute-card-img" alt="Mission-driven tech">
+                        </div>
+                        <div class="qoute-card-body">
+                            <h5 class="qoute-card-title">🚀 Mission: Meaningful Impact</h5>
+                            <p class="qoute-card-subtitle">
+                                "I don't just want a career — I want impact. My goal is to build products that make
+                                everyday life easier, smarter, and a little more joyful for people."
+                            </p>
+                            <p class="text-muted small">💡 Learning AI & Data Science to design smarter futures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of Motivation section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <div class="row text-center">
+                <div class="col-lg-4  " data-aos="fade-up" data-aos-delay="400">
                     <form asp-action="Create">
-                      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                      <span asp-validation-for="Name" class="text-danger"></span>
-                      <input asp-for="Name" class="form-control" placeholder="Name..." /><br />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <input asp-for="Name" class="form-control" placeholder="Name..." /><br />
 
-                      <span asp-validation-for="Email" class="text-danger"></span>
-                      <input asp-for="Email" class="form-control" placeholder="E-mail..." /><br />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <input asp-for="Email" class="form-control" placeholder="E-mail..." /><br />
 
-                      <span asp-validation-for="Phone" class="text-danger"></span>
-                      <input asp-for="Phone" class="form-control" placeholder="Phone..." /><br />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                        <input asp-for="Phone" class="form-control" placeholder="Phone..." /><br />
 
-                      <span asp-validation-for="Message" class="text-danger"></span>
-                      <textarea asp-for="Message" class="form-control" placeholder="How can I help you?"
-                        style="height:120px;"></textarea><br />
-                      <div class="form-group">
-                        <button class="glowing-btn" style="margin:0; perspective: none;
-     letter-spacing: .5em;">
-                          Send</button>
-                      </div>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                        <textarea asp-for="Message" class="form-control" placeholder="How can I help you?"
+                            style="height:120px;"></textarea><br />
+                        <div class="form-group">
+                            <button class="glowing-btn" style="margin:0; perspective: none;
+   letter-spacing: .5em;">
+                                Send</button>
+                        </div>
 
                     </form>
 
-                  </div>
-                  <br />
-                  <div class="col-lg-4 p-4 social" data-aos="fade-up" data-aos-delay="400">
+                </div>
+                <br />
+                <div class="col-lg-4 p-4 social" data-aos="fade-up" data-aos-delay="400">
 
                     <div class="social-btns">
-                      <a class="btn facebook"
-                        href="https://www.facebook.com/profile.php?id=100035777060702&mibextid=LQQJ4d"
-                        target="_blank"><i class="fa fa-facebook"></i></a>
-                      <a class="btn twitter" href="https://www.linkedin.com/in/kshitij-jain-127688276"
-                        target="_blank"><i class="fa fa-linkedin"></i></a>
-                      <a class="btn google" href="https://github.com/kshitij-jain-github" target="_blank"><i
-                          class="fa fa-github"></i></a>
-                      <a class="btn dribbble" href="https://instagram.com/_kshitijjain_?igshid=MmIzYWVlNDQ5Yg=="
-                        target="_blank"><i class="fa fa-instagram"></i></a>
-                      <a class="btn skype" href="#"><i class="fa fa-dribbble"></i></a>
+                        <a class="btn facebook"
+                            href="https://www.facebook.com/profile.php?id=100035777060702&mibextid=LQQJ4d"
+                            target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="btn twitter" href="https://www.linkedin.com/in/kshitij-jain-127688276"
+                            target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn google" href="https://github.com/kshitij-jain-github" target="_blank"><i
+                                class="fa fa-github"></i></a>
+                        <a class="btn dribbble" href="https://instagram.com/_kshitijjain_?igshid=MmIzYWVlNDQ5Yg=="
+                            target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a class="btn skype" href="#"><i class="fa fa-dribbble"></i></a>
                     </div>
 
 
                     <div class="email">
 
 
-                      <p> <i class="fa fa-envelope"></i> jainkshitij1530@gmail.com</p>
+                        <p> <i class="fa fa-envelope"></i> jainkshitij1530@gmail.com</p>
                     </div>
 
                     <div class="phone">
 
-                      <p> <i class="fa fa-phone"></i> +91 8448908359</p>
+                        <p> <i class="fa fa-phone"></i> +91 8448908359</p>
                     </div>
-                  </div>
-                  <br />
-                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                </div>
+                <br />
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
 
 
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2200376613728!2d77.28376219181169!3d28.67644710889506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc7fe7dc6f63%3A0xf1b9b7aaf913ab92!2sW-7A%2C%20Navin%20Shahdara%2C%20Shahdara%2C%20New%20Delhi%2C%20Delhi%20110032!5e0!3m2!1sen!2sin!4v1644996274444!5m2!1sen!2sin"
-                      style="padding:2%; border-radius:10%" height="300" width="350" allowfullscreen=""></iframe>
-                  </div>
-
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2200376613728!2d77.28376219181169!3d28.67644710889506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc7fe7dc6f63%3A0xf1b9b7aaf913ab92!2sW-7A%2C%20Navin%20Shahdara%2C%20Shahdara%2C%20New%20Delhi%2C%20Delhi%20110032!5e0!3m2!1sen!2sin!4v1644996274444!5m2!1sen!2sin"
+                        style="padding:2%; border-radius:10%" height="300" width="350" allowfullscreen=""></iframe>
                 </div>
 
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+            </div>
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
 
-    <ul class="outer-nav">
+    <!-- footer -->
+    <div class="container text-center">
+        <footer class="footer">
+            <p class="mx-auto">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="http://www.devcrud.com">Kshitij Jain</a> - Built with purpose. Designed with care. Growing
+                with every line of code
+            </p>
 
-      <li class="is-active">About</li>
-      <li>Education</li>
-      <li>Experience</li>
-      <li>Projects</li>
-      <li>Skills</li>
-      <li>Achievmnets</li>
-      <li>Contact</li>
-    </ul>
-  </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="jquery-3.4.1.js"></script>
+    <script src="typed.js"></script>
+    <script src="https://kit.fontawesome.com/b5e70f813f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="home.js"></script>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="animation-effect.js"></script>
-  <script src="moving-stars.js"></script>
-  <script src="site.js"></script>
-  <script src="https://kit.fontawesome.com/b5e70f813f.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init();
-  </script>
 </body>
 
 </html>
