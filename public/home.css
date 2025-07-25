@@ -17,11 +17,13 @@
     font-size: 44px;
     line-height: 1.6;
 }
-.box{
-   
+
+.box {
+
     box-shadow: 0 0 2em 0.2em var(--glow-color);
     transition: opacity 100ms linear;
 }
+
 .text-justify {
     text-align: justify !important;
 }
@@ -108,154 +110,8 @@
     }
 }
 
-.text-lowercase {
-    text-transform: lowercase !important;
-}
 
-.text-uppercase {
-    text-transform: uppercase !important;
-}
 
-.text-capitalize {
-    text-transform: capitalize !important;
-}
-
-.font-weight-light {
-    font-weight: 300 !important;
-}
-
-.font-weight-lighter {
-    font-weight: lighter !important;
-}
-
-.font-weight-normal {
-    font-weight: 400 !important;
-}
-
-.font-weight-bold {
-    font-weight: 700 !important;
-}
-
-.font-weight-bolder {
-    font-weight: bolder !important;
-}
-
-.font-italic {
-    font-style: italic !important;
-}
-
-.text-white {
-    color: #fff !important;
-}
-
-.text-primary {
-    color: var(-glow-color) !important;
-}
-
-a.text-primary:hover,
-a.text-primary:focus {
-    color: var(-glow-color) !important;
-}
-
-.text-secondary {
-    color: #393e46 !important;
-}
-
-a.text-secondary:hover,
-a.text-secondary:focus {
-    color: #17191c !important;
-}
-
-.text-success {
-    color: #1bb74f !important;
-}
-
-a.text-success:hover,
-a.text-success:focus {
-    color: #117432 !important;
-}
-
-.text-info {
-    color: #17a2b8 !important;
-}
-
-a.text-info:hover,
-a.text-info:focus {
-    color: #0f6674 !important;
-}
-
-.text-warning {
-    color: #ff6d02 !important;
-}
-
-a.text-warning:hover,
-a.text-warning:focus {
-    color: #b54c00 !important;
-}
-
-.text-danger {
-    color: #ec185d !important;
-}
-
-a.text-danger:hover,
-a.text-danger:focus {
-    color: #aa0e41 !important;
-}
-
-.text-light {
-    color: #f8f9fa !important;
-}
-
-a.text-light:hover,
-a.text-light:focus {
-    color: #cbd3da !important;
-}
-
-.text-dark {
-    color: #212529 !important;
-}
-
-a.text-dark:hover,
-a.text-dark:focus {
-    color: black !important;
-}
-
-.text-body {
-    color: #212529 !important;
-}
-
-.text-muted {
-    color: #6c757d !important;
-}
-
-.text-black-50 {
-    color: rgba(0, 0, 0, 0.5) !important;
-}
-
-.text-white-50 {
-    color: rgba(255, 255, 255, 0.5) !important;
-}
-
-.text-hide {
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-}
-
-.text-decoration-none {
-    text-decoration: none !important;
-}
-
-.text-break {
-    word-break: break-word !important;
-    overflow-wrap: break-word !important;
-}
-
-.text-reset {
-    color: inherit !important;
-}
 
 .visible {
     visibility: visible !important;
@@ -272,7 +128,7 @@ a.text-dark:focus {
     *::after {
         text-shadow: none !important;
         box-shadow: none !important;
-        
+
     }
 
     a:not(.btn) {
@@ -547,7 +403,7 @@ p {
     border: 5px solid #000000;
     overflow: hidden;
     border-radius: 3px;
- 
+
     box-shadow: 0 0 2em 0.2em var(--glow-color);
     transition: opacity 100ms linear;
 }
@@ -604,10 +460,10 @@ p {
     display: block;
     position: relative;
     overflow: hidden;
-    border:1px solid grey;
+    border: 1px solid grey;
     margin: 10px;
-   
-    
+
+
 }
 
 .achievement-card .achievement-card-img {
@@ -681,15 +537,15 @@ p {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 30px;
-   
+
 }
 
 .qoute-card-img-holder {
     min-width: 45px;
     max-width: 45px;
     z-index: 999;
-   
-    
+
+
 }
 
 .qoute-card-img {
@@ -698,7 +554,7 @@ p {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-   
+
     box-shadow: 0 0 2em 0.2em var(--glow-color);
     transition: opacity 100ms linear;
 }
@@ -709,7 +565,7 @@ p {
     background: #fff;
     padding: 20px 20px 20px 60px;
     border-radius: 0;
-   
+
     box-shadow: 0 0 2em 0.2em var(--glow-color);
     transition: opacity 100ms linear;
 }
@@ -718,7 +574,7 @@ p {
     margin-top: 20px;
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
 }
- 
+
 
 pre {
     border: 2px solid #dee2e6;
@@ -736,7 +592,7 @@ pre .code {
     width: 300px;
 }
 
- 
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -950,8 +806,8 @@ pre .code {
 .custom-navbar.affix {
     background: #fff;
     border-bottom: 1px solid rgba(222, 226, 230, 0.34);
-  
-     
+
+
 }
 
 .custom-navbar.affix .logo {
@@ -1203,7 +1059,7 @@ pre .code {
     align-items: center;
 }
 
- 
+
 .footer a,
 .footer p {
     color: #393e46;
@@ -1211,8 +1067,8 @@ pre .code {
     display: inline-block;
     margin: 0;
 }
- 
- 
+
+
 @media (max-width: 767.98px) {
     .footer {
         padding: 15px 0;
@@ -1223,7 +1079,7 @@ pre .code {
         flex-direction: column;
     }
 
-   
+
 }
 
 .header {
@@ -1242,12 +1098,9 @@ pre .code {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.127)), url('img/vecteezy_mercury-planet-on-transparent-backdrop_48412690.png');
-    background-size: 450px;
-    background-repeat: no-repeat;
-    background-position: 80px 80px;
- 
-    box-shadow: 0 0 2em 0.2em var(--glow-color);
+
+
+    box-shadow: 0 0 5em 0.2em rgb(44, 60, 95);
     transition: opacity 100ms linear;
 
 
@@ -1263,7 +1116,7 @@ pre .code {
     height: 100%;
     z-index: -99999;
     background: linear-gradient(35deg, rgb(15, 2, 8) 0%, rgba(3, 12, 25) 50%, rgba(0, 10, 3, 1) 100%);
-    
+
 }
 
 .header .header-content {
@@ -1273,16 +1126,18 @@ pre .code {
     flex-grow: 1;
     max-width: 650px;
     border: 1px solid black;
- 
+
     border-radius: 50px;
     padding: 5px 40px;
- 
+
     box-shadow: 0 0 1em 0.1em var(--glow-color);
     transition: opacity 100ms linear;
-    
-    background-color: rgba(74, 74, 74, 0.2); /* Semi-transparent white */
+
+    background-color: rgba(74, 74, 74, 0.2);
+    /* Semi-transparent white */
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    -webkit-backdrop-filter: blur(5px);
+    /* Safari support */
 
 
 }
@@ -1296,7 +1151,7 @@ pre .code {
     /* Flips the image horizontally */
     pointer-events: none;
     user-select: none;
-    
+
 }
 
 
@@ -1373,12 +1228,122 @@ pre .code {
     }
 }
 
+.moon {
+    all: unset;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 30em;
+    height: 30em;
+
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    z-index: -9999;
+    pointer-events: none;
+
+    /* Optional: disables clicking if it's purely decorative */
+}
+
+.moon>span {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    clip-path: circle(50% at 50% 50%);
+    transition: transform 0.15s ease-in;
+}
+
+.moon>span>svg {
+    width: 30em;
+    height: 30em;
+
+}
+
+.moon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    animation: pulse 1.2s ease-in-out infinite;
+    transition: all 0.15s ease-in;
+}
+
+/* Hide red hover effects */
+.moon>span:after,
+.moon>span:before {
+    display: none !important;
+}
+
+.moon:active>span>svg {
+    transform: scale(0);
+}
+
+.moon:active:before {
+    display: none;
+}
+
+
+
+/* Responsive tweaks for very small screens */
+@media (max-width: 576px) {
+    .moon {
+        width: 18em;
+        height: 18em;
+        right: 5%;
+        top: 5%;
+    }
+
+    .moon>span>svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+
+
+@keyframes spaceFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /* sections */
 .section {
     padding: 70px 10px;
-    
-    
+
 }
 
 .section .section-title {
@@ -1427,27 +1392,6 @@ pre .code {
 }
 
 
-/*** Skills ***/
-
-#skill .nav-pills .nav-link {
-    color: var(--dark);
-}
-
-#skill .nav-pills .nav-link.active {
-    color: #FFFFFF;
-}
-
-#skill .tab-content hr {
-    width: 30px;
-}
-
-.tab-content>.tab-pane {
-    display: none
-}
-
-.tab-content>.active {
-    display: block
-}
 
 .typed-cursor {
     font-size: 30px;
@@ -1456,8 +1400,6 @@ pre .code {
 
 
 /* UFO BEGINNING */
-
-
 
 .flying-wrapper {
     height: 88px;
@@ -2352,7 +2294,7 @@ pre .code {
     -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
         0 0 0.45em var(--glow-color);
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
-    
+
 }
 
 .faulty-letter {

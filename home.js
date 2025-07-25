@@ -51,7 +51,7 @@ class firefly {
   show() {
     c.beginPath();
     c.arc(this.x, this.y, this.s, 0, 2 * Math.PI);
-    c.fillStyle = "#fff";
+    c.fillStyle = "#F7374F";
     c.fill();
   }
 }
